@@ -1,0 +1,5104 @@
+{
+  "report": {
+    "conditions": {
+      "text": "METAR KPWM 161251Z 28017G27KT 10SM FEW038 BKN049 M07/M14 A2943 RMK AO2 PK WND 29029/1228 SLP968 T10721144 $",
+      "ident": "kpwm",
+      "dateIssued": "2026-01-16T12:51:00+0000",
+      "lat": 43.645645,
+      "lon": -70.30862,
+      "elevationFt": 76.0,
+      "tempC": -7.0,
+      "dewpointC": -14.0,
+      "pressureHg": 29.43,
+      "pressureHpa": 996.6557789999999,
+      "reportedAsHpa": false,
+      "densityAltitudeFt": -2024,
+      "relativeHumidity": 58,
+      "flightRules": "vfr",
+      "cloudLayers": [
+        {
+          "coverage": "few",
+          "altitudeFt": 3800.0,
+          "ceiling": false
+        },
+        {
+          "coverage": "bkn",
+          "altitudeFt": 4900.0,
+          "ceiling": true
+        }
+      ],
+      "cloudLayersV2": [
+        {
+          "coverage": "few",
+          "altitudeFt": 3800.0,
+          "ceiling": false
+        },
+        {
+          "coverage": "bkn",
+          "altitudeFt": 4900.0,
+          "ceiling": true
+        }
+      ],
+      "weather": [],
+      "visibility": {
+        "distanceSm": 10.0,
+        "distanceMeter": 16093.44000614692,
+        "prevailingVisSm": 10.0,
+        "prevailingVisMeter": 16093.44000614692,
+        "visReportedInMetric": false
+      },
+      "wind": {
+        "speedKts": 17.0,
+        "gustSpeedKts": 27.0,
+        "direction": 280,
+        "from": 280,
+        "variable": false
+      },
+      "remarks": {
+        "precipitationDiscriminator": true,
+        "humanObserver": false,
+        "windFrom": 290,
+        "windSpeed": 29,
+        "windDate": "2026-01-16T12:28:00+0000",
+        "seaLevelPressure": 996.8,
+        "sixHourMinimumTemperature": 2.9,
+        "temperature": -7.2,
+        "dewpoint": -14.4,
+        "visibility": {},
+        "sensoryStatus": [],
+        "lightning": [],
+        "weatherBeginEnds": {},
+        "clouds": [],
+        "obscuringLayers": [],
+        "maintenanceNeeded": true
+      },
+      "longestRunway": 7200
+    },
+    "forecast": {
+      "text": "TAF KPWM 161138Z 1612/1712 28011G20KT P6SM SCT100 FM162100 28008KT P6SM SCT150 FM171000 23005KT 5SM -SN OVC040",
+      "ident": "kpwm",
+      "dateIssued": "2026-01-16T11:38:00+0000",
+      "period": {
+        "dateStart": "2026-01-16T12:00:00+0000",
+        "dateEnd": "2026-01-17T12:00:00+0000"
+      },
+      "lat": 43.645645,
+      "lon": -70.30862,
+      "elevationFt": 76.0,
+      "conditions": [
+        {
+          "text": "161138Z 1612/1712 28011G20KT P6SM SCT100",
+          "dateIssued": "2026-01-16T11:38:00+0000",
+          "lat": 43.645645,
+          "lon": -70.30862,
+          "elevationFt": 76.0,
+          "relativeHumidity": 100,
+          "flightRules": "vfr",
+          "cloudLayers": [
+            {
+              "coverage": "sct",
+              "altitudeFt": 10000.0,
+              "ceiling": false
+            }
+          ],
+          "cloudLayersV2": [
+            {
+              "coverage": "sct",
+              "altitudeFt": 10000.0,
+              "ceiling": false
+            }
+          ],
+          "weather": [],
+          "visibility": {
+            "distanceSm": 6.0,
+            "distanceMeter": 9656.064003688152,
+            "distanceQualifier": 1,
+            "prevailingVisSm": 6.0,
+            "prevailingVisMeter": 9656.064003688152,
+            "prevailingVisDistanceQualifier": 1,
+            "visReportedInMetric": false
+          },
+          "wind": {
+            "speedKts": 11.0,
+            "gustSpeedKts": 20.000000000000004,
+            "direction": 280,
+            "from": 280,
+            "variable": false
+          },
+          "period": {
+            "dateStart": "2026-01-16T12:00:00+0000",
+            "dateEnd": "2026-01-16T21:00:00+0000"
+          }
+        },
+        {
+          "text": "FM162100 28008KT P6SM SCT150",
+          "dateIssued": "2026-01-16T21:00:00+0000",
+          "lat": 43.645645,
+          "lon": -70.30862,
+          "elevationFt": 76.0,
+          "relativeHumidity": 100,
+          "flightRules": "vfr",
+          "cloudLayers": [
+            {
+              "coverage": "sct",
+              "altitudeFt": 15000.0,
+              "ceiling": false
+            }
+          ],
+          "cloudLayersV2": [
+            {
+              "coverage": "sct",
+              "altitudeFt": 15000.0,
+              "ceiling": false
+            }
+          ],
+          "weather": [],
+          "visibility": {
+            "distanceSm": 6.0,
+            "distanceMeter": 9656.064003688152,
+            "distanceQualifier": 1,
+            "prevailingVisSm": 6.0,
+            "prevailingVisMeter": 9656.064003688152,
+            "prevailingVisDistanceQualifier": 1,
+            "visReportedInMetric": false
+          },
+          "wind": {
+            "speedKts": 8.0,
+            "direction": 280,
+            "from": 280,
+            "variable": false
+          },
+          "period": {
+            "dateStart": "2026-01-16T21:00:00+0000",
+            "dateEnd": "2026-01-17T10:00:00+0000"
+          }
+        },
+        {
+          "text": "FM171000 23005KT 5SM -SN OVC040",
+          "dateIssued": "2026-01-17T10:00:00+0000",
+          "lat": 43.645645,
+          "lon": -70.30862,
+          "elevationFt": 76.0,
+          "relativeHumidity": 100,
+          "flightRules": "mvfr",
+          "cloudLayers": [
+            {
+              "coverage": "ovc",
+              "altitudeFt": 4000.0,
+              "ceiling": true
+            }
+          ],
+          "cloudLayersV2": [
+            {
+              "coverage": "ovc",
+              "altitudeFt": 4000.0,
+              "ceiling": true
+            }
+          ],
+          "weather": [
+            "light snow"
+          ],
+          "visibility": {
+            "distanceSm": 5.0,
+            "distanceMeter": 8046.72000307346,
+            "prevailingVisSm": 5.0,
+            "prevailingVisMeter": 8046.72000307346,
+            "visReportedInMetric": false
+          },
+          "wind": {
+            "speedKts": 5.000000000000001,
+            "direction": 230,
+            "from": 230,
+            "variable": false
+          },
+          "period": {
+            "dateStart": "2026-01-17T10:00:00+0000",
+            "dateEnd": "2026-01-17T12:00:00+0000"
+          }
+        }
+      ]
+    },
+    "windsAloft": {
+      "lat": 43.645645,
+      "lon": -70.30862,
+      "dateIssued": "2026-01-16T06:00:00+0000",
+      "windsAloft": [
+        {
+          "validTime": "2026-01-16T06:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-16T05:30:00+0000",
+            "dateEnd": "2026-01-16T06:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 282,
+              "knots": 6,
+              "celsius": -1,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 286,
+              "knots": 12,
+              "celsius": -6,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 222,
+              "knots": 19,
+              "celsius": -9,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 204,
+              "knots": 41,
+              "celsius": -12,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 199,
+              "knots": 59,
+              "celsius": -13,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 206,
+              "knots": 68,
+              "celsius": -20,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 210,
+              "knots": 111,
+              "celsius": -21,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 200,
+              "knots": 155,
+              "celsius": -22,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 194,
+              "knots": 139,
+              "celsius": -30,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 194,
+              "knots": 157,
+              "celsius": -37,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 193,
+              "knots": 166,
+              "celsius": -44,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 202,
+              "knots": 133,
+              "celsius": -47,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 205,
+              "knots": 110,
+              "celsius": -49,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 205,
+              "knots": 92,
+              "celsius": -52,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 211,
+              "knots": 80,
+              "celsius": -51,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 218,
+              "knots": 69,
+              "celsius": -51,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 225,
+              "knots": 60,
+              "celsius": -52,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 233,
+              "knots": 52,
+              "celsius": -53,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 240,
+              "knots": 45,
+              "celsius": -54,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        },
+        {
+          "validTime": "2026-01-16T07:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-16T06:30:00+0000",
+            "dateEnd": "2026-01-16T07:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 308,
+              "knots": 6,
+              "celsius": -3,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 299,
+              "knots": 12,
+              "celsius": -8,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 231,
+              "knots": 16,
+              "celsius": -11,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 207,
+              "knots": 41,
+              "celsius": -13,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 196,
+              "knots": 64,
+              "celsius": -14,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 203,
+              "knots": 74,
+              "celsius": -20,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 209,
+              "knots": 95,
+              "celsius": -23,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 198,
+              "knots": 158,
+              "celsius": -23,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 187,
+              "knots": 141,
+              "celsius": -30,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 187,
+              "knots": 150,
+              "celsius": -37,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 191,
+              "knots": 159,
+              "celsius": -46,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 198,
+              "knots": 129,
+              "celsius": -47,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 202,
+              "knots": 105,
+              "celsius": -49,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 205,
+              "knots": 85,
+              "celsius": -50,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 213,
+              "knots": 75,
+              "celsius": -50,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 222,
+              "knots": 65,
+              "celsius": -50,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 227,
+              "knots": 57,
+              "celsius": -51,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 233,
+              "knots": 50,
+              "celsius": -53,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 239,
+              "knots": 43,
+              "celsius": -54,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        },
+        {
+          "validTime": "2026-01-16T08:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-16T07:30:00+0000",
+            "dateEnd": "2026-01-16T08:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 306,
+              "knots": 6,
+              "celsius": -4,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 307,
+              "knots": 13,
+              "celsius": -9,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 242,
+              "knots": 10,
+              "celsius": -12,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 214,
+              "knots": 33,
+              "celsius": -16,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 205,
+              "knots": 59,
+              "celsius": -17,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 204,
+              "knots": 72,
+              "celsius": -20,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 205,
+              "knots": 105,
+              "celsius": -22,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 194,
+              "knots": 148,
+              "celsius": -25,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 188,
+              "knots": 148,
+              "celsius": -31,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 186,
+              "knots": 160,
+              "celsius": -39,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 190,
+              "knots": 152,
+              "celsius": -45,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 197,
+              "knots": 115,
+              "celsius": -46,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 202,
+              "knots": 93,
+              "celsius": -47,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 207,
+              "knots": 79,
+              "celsius": -48,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 216,
+              "knots": 68,
+              "celsius": -48,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 226,
+              "knots": 59,
+              "celsius": -49,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 229,
+              "knots": 53,
+              "celsius": -51,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 233,
+              "knots": 47,
+              "celsius": -52,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 236,
+              "knots": 41,
+              "celsius": -54,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        },
+        {
+          "validTime": "2026-01-16T09:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-16T08:30:00+0000",
+            "dateEnd": "2026-01-16T09:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 302,
+              "knots": 6,
+              "celsius": -5,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 318,
+              "knots": 16,
+              "celsius": -12,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 284,
+              "knots": 4,
+              "celsius": -14,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 212,
+              "knots": 18,
+              "celsius": -18,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 210,
+              "knots": 44,
+              "celsius": -20,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 206,
+              "knots": 56,
+              "celsius": -22,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 206,
+              "knots": 99,
+              "celsius": -23,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 192,
+              "knots": 134,
+              "celsius": -26,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 193,
+              "knots": 132,
+              "celsius": -35,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 192,
+              "knots": 117,
+              "celsius": -41,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 195,
+              "knots": 109,
+              "celsius": -42,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 199,
+              "knots": 90,
+              "celsius": -43,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 204,
+              "knots": 76,
+              "celsius": -44,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 210,
+              "knots": 67,
+              "celsius": -46,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 219,
+              "knots": 58,
+              "celsius": -47,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 228,
+              "knots": 52,
+              "celsius": -49,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 231,
+              "knots": 48,
+              "celsius": -51,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 234,
+              "knots": 45,
+              "celsius": -52,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 236,
+              "knots": 41,
+              "celsius": -54,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        },
+        {
+          "validTime": "2026-01-16T10:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-16T09:30:00+0000",
+            "dateEnd": "2026-01-16T10:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 315,
+              "knots": 8,
+              "celsius": -6,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 327,
+              "knots": 27,
+              "celsius": -12,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 318,
+              "knots": 13,
+              "celsius": -15,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 236,
+              "knots": 10,
+              "celsius": -19,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 223,
+              "knots": 31,
+              "celsius": -21,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 213,
+              "knots": 45,
+              "celsius": -22,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 204,
+              "knots": 88,
+              "celsius": -24,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 192,
+              "knots": 124,
+              "celsius": -28,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 188,
+              "knots": 124,
+              "celsius": -36,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 195,
+              "knots": 93,
+              "celsius": -39,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 201,
+              "knots": 82,
+              "celsius": -41,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 203,
+              "knots": 73,
+              "celsius": -42,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 208,
+              "knots": 66,
+              "celsius": -44,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 216,
+              "knots": 60,
+              "celsius": -45,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 223,
+              "knots": 52,
+              "celsius": -47,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 231,
+              "knots": 45,
+              "celsius": -49,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 234,
+              "knots": 45,
+              "celsius": -50,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 238,
+              "knots": 45,
+              "celsius": -51,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 241,
+              "knots": 42,
+              "celsius": -53,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        },
+        {
+          "validTime": "2026-01-16T11:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-16T10:30:00+0000",
+            "dateEnd": "2026-01-16T11:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 306,
+              "knots": 9,
+              "celsius": -7,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 314,
+              "knots": 30,
+              "celsius": -14,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 327,
+              "knots": 20,
+              "celsius": -15,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 274,
+              "knots": 7,
+              "celsius": -21,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 242,
+              "knots": 19,
+              "celsius": -23,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 226,
+              "knots": 31,
+              "celsius": -24,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 219,
+              "knots": 46,
+              "celsius": -26,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 208,
+              "knots": 72,
+              "celsius": -29,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 206,
+              "knots": 69,
+              "celsius": -35,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 203,
+              "knots": 62,
+              "celsius": -37,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 205,
+              "knots": 60,
+              "celsius": -39,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 209,
+              "knots": 56,
+              "celsius": -41,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 214,
+              "knots": 56,
+              "celsius": -42,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 219,
+              "knots": 55,
+              "celsius": -44,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 224,
+              "knots": 47,
+              "celsius": -46,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 229,
+              "knots": 40,
+              "celsius": -48,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 234,
+              "knots": 41,
+              "celsius": -49,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 238,
+              "knots": 43,
+              "celsius": -51,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 242,
+              "knots": 42,
+              "celsius": -52,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        },
+        {
+          "validTime": "2026-01-16T12:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-16T11:30:00+0000",
+            "dateEnd": "2026-01-16T12:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 302,
+              "knots": 10,
+              "celsius": -7,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 299,
+              "knots": 32,
+              "celsius": -14,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 309,
+              "knots": 27,
+              "celsius": -16,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 280,
+              "knots": 11,
+              "celsius": -22,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 262,
+              "knots": 15,
+              "celsius": -26,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 255,
+              "knots": 24,
+              "celsius": -27,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 246,
+              "knots": 34,
+              "celsius": -28,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 236,
+              "knots": 36,
+              "celsius": -32,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 235,
+              "knots": 45,
+              "celsius": -34,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 226,
+              "knots": 44,
+              "celsius": -36,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 213,
+              "knots": 45,
+              "celsius": -38,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 216,
+              "knots": 47,
+              "celsius": -40,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 219,
+              "knots": 48,
+              "celsius": -42,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 222,
+              "knots": 47,
+              "celsius": -44,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 228,
+              "knots": 44,
+              "celsius": -46,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 235,
+              "knots": 42,
+              "celsius": -48,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 242,
+              "knots": 43,
+              "celsius": -49,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 249,
+              "knots": 44,
+              "celsius": -50,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 255,
+              "knots": 43,
+              "celsius": -51,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        },
+        {
+          "validTime": "2026-01-16T13:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-16T12:30:00+0000",
+            "dateEnd": "2026-01-16T13:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 305,
+              "knots": 10,
+              "celsius": -8,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 286,
+              "knots": 29,
+              "celsius": -14,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 300,
+              "knots": 25,
+              "celsius": -16,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 282,
+              "knots": 18,
+              "celsius": -22,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 290,
+              "knots": 22,
+              "celsius": -26,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 289,
+              "knots": 30,
+              "celsius": -28,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 278,
+              "knots": 33,
+              "celsius": -29,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 269,
+              "knots": 36,
+              "celsius": -32,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 253,
+              "knots": 37,
+              "celsius": -35,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 250,
+              "knots": 38,
+              "celsius": -36,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 230,
+              "knots": 37,
+              "celsius": -38,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 229,
+              "knots": 44,
+              "celsius": -40,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 230,
+              "knots": 46,
+              "celsius": -42,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 232,
+              "knots": 46,
+              "celsius": -43,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 237,
+              "knots": 46,
+              "celsius": -45,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 243,
+              "knots": 46,
+              "celsius": -46,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 249,
+              "knots": 45,
+              "celsius": -48,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 255,
+              "knots": 44,
+              "celsius": -49,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 261,
+              "knots": 42,
+              "celsius": -51,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        },
+        {
+          "validTime": "2026-01-16T14:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-16T13:30:00+0000",
+            "dateEnd": "2026-01-16T14:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 311,
+              "knots": 10,
+              "celsius": -8,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 290,
+              "knots": 28,
+              "celsius": -14,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 299,
+              "knots": 28,
+              "celsius": -16,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 291,
+              "knots": 27,
+              "celsius": -21,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 301,
+              "knots": 35,
+              "celsius": -26,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 302,
+              "knots": 40,
+              "celsius": -28,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 298,
+              "knots": 43,
+              "celsius": -30,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 287,
+              "knots": 45,
+              "celsius": -33,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 281,
+              "knots": 43,
+              "celsius": -36,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 268,
+              "knots": 41,
+              "celsius": -38,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 249,
+              "knots": 42,
+              "celsius": -39,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 245,
+              "knots": 42,
+              "celsius": -40,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 243,
+              "knots": 45,
+              "celsius": -41,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 245,
+              "knots": 47,
+              "celsius": -42,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 247,
+              "knots": 48,
+              "celsius": -43,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 251,
+              "knots": 48,
+              "celsius": -45,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 254,
+              "knots": 45,
+              "celsius": -47,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 257,
+              "knots": 44,
+              "celsius": -50,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 262,
+              "knots": 40,
+              "celsius": -52,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        },
+        {
+          "validTime": "2026-01-16T15:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-16T14:30:00+0000",
+            "dateEnd": "2026-01-16T15:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 309,
+              "knots": 10,
+              "celsius": -8,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 282,
+              "knots": 24,
+              "celsius": -14,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 300,
+              "knots": 32,
+              "celsius": -15,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 299,
+              "knots": 30,
+              "celsius": -20,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 308,
+              "knots": 41,
+              "celsius": -25,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 307,
+              "knots": 50,
+              "celsius": -28,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 303,
+              "knots": 58,
+              "celsius": -30,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 296,
+              "knots": 57,
+              "celsius": -34,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 290,
+              "knots": 57,
+              "celsius": -36,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 282,
+              "knots": 48,
+              "celsius": -38,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 263,
+              "knots": 44,
+              "celsius": -39,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 256,
+              "knots": 46,
+              "celsius": -40,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 252,
+              "knots": 46,
+              "celsius": -40,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 250,
+              "knots": 47,
+              "celsius": -41,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 251,
+              "knots": 53,
+              "celsius": -43,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 251,
+              "knots": 57,
+              "celsius": -46,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 254,
+              "knots": 50,
+              "celsius": -48,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 256,
+              "knots": 44,
+              "celsius": -50,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 261,
+              "knots": 38,
+              "celsius": -52,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        },
+        {
+          "validTime": "2026-01-16T16:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-16T15:30:00+0000",
+            "dateEnd": "2026-01-16T16:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 302,
+              "knots": 9,
+              "celsius": -8,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 286,
+              "knots": 19,
+              "celsius": -15,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 302,
+              "knots": 35,
+              "celsius": -14,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 301,
+              "knots": 35,
+              "celsius": -18,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 313,
+              "knots": 44,
+              "celsius": -23,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 306,
+              "knots": 56,
+              "celsius": -28,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 304,
+              "knots": 71,
+              "celsius": -31,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 297,
+              "knots": 72,
+              "celsius": -35,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 295,
+              "knots": 68,
+              "celsius": -38,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 291,
+              "knots": 61,
+              "celsius": -39,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 285,
+              "knots": 55,
+              "celsius": -40,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 269,
+              "knots": 47,
+              "celsius": -40,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 256,
+              "knots": 52,
+              "celsius": -41,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 250,
+              "knots": 61,
+              "celsius": -41,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 251,
+              "knots": 55,
+              "celsius": -43,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 252,
+              "knots": 50,
+              "celsius": -45,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 256,
+              "knots": 48,
+              "celsius": -47,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 260,
+              "knots": 46,
+              "celsius": -50,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 265,
+              "knots": 43,
+              "celsius": -52,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        },
+        {
+          "validTime": "2026-01-16T17:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-16T16:30:00+0000",
+            "dateEnd": "2026-01-16T17:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 293,
+              "knots": 8,
+              "celsius": -7,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 285,
+              "knots": 18,
+              "celsius": -15,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 302,
+              "knots": 38,
+              "celsius": -13,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 306,
+              "knots": 38,
+              "celsius": -16,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 316,
+              "knots": 47,
+              "celsius": -22,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 308,
+              "knots": 59,
+              "celsius": -27,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 304,
+              "knots": 70,
+              "celsius": -31,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 295,
+              "knots": 74,
+              "celsius": -36,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 295,
+              "knots": 83,
+              "celsius": -38,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 292,
+              "knots": 75,
+              "celsius": -41,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 284,
+              "knots": 65,
+              "celsius": -42,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 266,
+              "knots": 55,
+              "celsius": -41,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 256,
+              "knots": 52,
+              "celsius": -41,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 252,
+              "knots": 53,
+              "celsius": -42,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 253,
+              "knots": 62,
+              "celsius": -44,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 254,
+              "knots": 67,
+              "celsius": -45,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 256,
+              "knots": 56,
+              "celsius": -48,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 259,
+              "knots": 45,
+              "celsius": -50,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 263,
+              "knots": 37,
+              "celsius": -52,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        },
+        {
+          "validTime": "2026-01-16T18:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-16T17:30:00+0000",
+            "dateEnd": "2026-01-16T19:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 284,
+              "knots": 7,
+              "celsius": -6,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 284,
+              "knots": 18,
+              "celsius": -14,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 303,
+              "knots": 41,
+              "celsius": -12,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 295,
+              "knots": 38,
+              "celsius": -15,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 304,
+              "knots": 39,
+              "celsius": -21,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 305,
+              "knots": 55,
+              "celsius": -25,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 300,
+              "knots": 60,
+              "celsius": -31,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 295,
+              "knots": 74,
+              "celsius": -35,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 294,
+              "knots": 84,
+              "celsius": -39,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 291,
+              "knots": 80,
+              "celsius": -43,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 286,
+              "knots": 71,
+              "celsius": -44,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 269,
+              "knots": 68,
+              "celsius": -42,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 260,
+              "knots": 64,
+              "celsius": -41,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 256,
+              "knots": 61,
+              "celsius": -40,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 255,
+              "knots": 65,
+              "celsius": -44,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 255,
+              "knots": 68,
+              "celsius": -48,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 258,
+              "knots": 59,
+              "celsius": -49,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 263,
+              "knots": 51,
+              "celsius": -50,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 266,
+              "knots": 44,
+              "celsius": -51,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        },
+        {
+          "validTime": "2026-01-16T21:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-16T19:30:00+0000",
+            "dateEnd": "2026-01-16T22:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 293,
+              "knots": 7,
+              "celsius": -5,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 302,
+              "knots": 30,
+              "celsius": -11,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 316,
+              "knots": 38,
+              "celsius": -10,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 306,
+              "knots": 37,
+              "celsius": -12,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 301,
+              "knots": 43,
+              "celsius": -17,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 291,
+              "knots": 52,
+              "celsius": -23,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 286,
+              "knots": 68,
+              "celsius": -28,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 283,
+              "knots": 74,
+              "celsius": -34,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 281,
+              "knots": 69,
+              "celsius": -41,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 278,
+              "knots": 64,
+              "celsius": -47,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 273,
+              "knots": 66,
+              "celsius": -48,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 262,
+              "knots": 68,
+              "celsius": -44,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 256,
+              "knots": 73,
+              "celsius": -42,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 252,
+              "knots": 77,
+              "celsius": -42,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 248,
+              "knots": 75,
+              "celsius": -44,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 245,
+              "knots": 71,
+              "celsius": -45,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 246,
+              "knots": 62,
+              "celsius": -48,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 248,
+              "knots": 53,
+              "celsius": -51,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 249,
+              "knots": 46,
+              "celsius": -54,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        },
+        {
+          "validTime": "2026-01-17T00:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-16T22:30:00+0000",
+            "dateEnd": "2026-01-17T01:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 311,
+              "knots": 6,
+              "celsius": -7,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 306,
+              "knots": 25,
+              "celsius": -9,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 303,
+              "knots": 23,
+              "celsius": -8,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 274,
+              "knots": 29,
+              "celsius": -12,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 273,
+              "knots": 37,
+              "celsius": -17,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 275,
+              "knots": 49,
+              "celsius": -23,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 280,
+              "knots": 61,
+              "celsius": -27,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 285,
+              "knots": 71,
+              "celsius": -34,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 282,
+              "knots": 81,
+              "celsius": -43,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 273,
+              "knots": 79,
+              "celsius": -49,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 268,
+              "knots": 71,
+              "celsius": -52,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 262,
+              "knots": 82,
+              "celsius": -46,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 257,
+              "knots": 83,
+              "celsius": -44,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 253,
+              "knots": 81,
+              "celsius": -43,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 250,
+              "knots": 80,
+              "celsius": -44,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 246,
+              "knots": 79,
+              "celsius": -46,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 244,
+              "knots": 66,
+              "celsius": -50,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 241,
+              "knots": 55,
+              "celsius": -53,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 241,
+              "knots": 46,
+              "celsius": -56,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        },
+        {
+          "validTime": "2026-01-17T03:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-17T01:30:00+0000",
+            "dateEnd": "2026-01-17T04:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 277,
+              "knots": 4,
+              "celsius": -6,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 202,
+              "knots": 10,
+              "celsius": -8,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 226,
+              "knots": 18,
+              "celsius": -9,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 247,
+              "knots": 30,
+              "celsius": -12,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 252,
+              "knots": 40,
+              "celsius": -16,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 259,
+              "knots": 52,
+              "celsius": -20,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 258,
+              "knots": 61,
+              "celsius": -26,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 258,
+              "knots": 69,
+              "celsius": -34,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 265,
+              "knots": 77,
+              "celsius": -42,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 267,
+              "knots": 78,
+              "celsius": -50,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 263,
+              "knots": 94,
+              "celsius": -52,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 259,
+              "knots": 97,
+              "celsius": -49,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 258,
+              "knots": 94,
+              "celsius": -47,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 257,
+              "knots": 89,
+              "celsius": -45,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 249,
+              "knots": 88,
+              "celsius": -46,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 242,
+              "knots": 85,
+              "celsius": -47,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 238,
+              "knots": 70,
+              "celsius": -50,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 231,
+              "knots": 55,
+              "celsius": -53,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 227,
+              "knots": 45,
+              "celsius": -55,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        },
+        {
+          "validTime": "2026-01-17T06:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-17T04:30:00+0000",
+            "dateEnd": "2026-01-17T07:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 230,
+              "knots": 3,
+              "celsius": -6,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 235,
+              "knots": 24,
+              "celsius": -7,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 243,
+              "knots": 29,
+              "celsius": -10,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 239,
+              "knots": 42,
+              "celsius": -12,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 244,
+              "knots": 53,
+              "celsius": -14,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 246,
+              "knots": 64,
+              "celsius": -19,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 246,
+              "knots": 75,
+              "celsius": -25,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 251,
+              "knots": 80,
+              "celsius": -33,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 259,
+              "knots": 85,
+              "celsius": -41,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 261,
+              "knots": 110,
+              "celsius": -48,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 261,
+              "knots": 108,
+              "celsius": -53,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 255,
+              "knots": 111,
+              "celsius": -51,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 255,
+              "knots": 106,
+              "celsius": -48,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 256,
+              "knots": 98,
+              "celsius": -46,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 249,
+              "knots": 91,
+              "celsius": -47,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 243,
+              "knots": 86,
+              "celsius": -49,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 242,
+              "knots": 75,
+              "celsius": -51,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 240,
+              "knots": 64,
+              "celsius": -54,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 240,
+              "knots": 54,
+              "celsius": -56,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        },
+        {
+          "validTime": "2026-01-17T09:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-17T07:30:00+0000",
+            "dateEnd": "2026-01-17T10:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 174,
+              "knots": 5,
+              "celsius": -5,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 228,
+              "knots": 25,
+              "celsius": -8,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 240,
+              "knots": 35,
+              "celsius": -9,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 239,
+              "knots": 48,
+              "celsius": -11,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 238,
+              "knots": 60,
+              "celsius": -14,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 239,
+              "knots": 70,
+              "celsius": -19,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 241,
+              "knots": 80,
+              "celsius": -25,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 244,
+              "knots": 88,
+              "celsius": -32,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 251,
+              "knots": 90,
+              "celsius": -40,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 253,
+              "knots": 100,
+              "celsius": -47,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 255,
+              "knots": 116,
+              "celsius": -51,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 257,
+              "knots": 119,
+              "celsius": -51,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 255,
+              "knots": 110,
+              "celsius": -50,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 251,
+              "knots": 98,
+              "celsius": -49,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 248,
+              "knots": 93,
+              "celsius": -50,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 246,
+              "knots": 87,
+              "celsius": -51,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 245,
+              "knots": 78,
+              "celsius": -53,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 244,
+              "knots": 70,
+              "celsius": -55,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 244,
+              "knots": 61,
+              "celsius": -56,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        },
+        {
+          "validTime": "2026-01-17T12:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-17T10:30:00+0000",
+            "dateEnd": "2026-01-17T13:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 220,
+              "knots": 9,
+              "celsius": -5,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 215,
+              "knots": 38,
+              "celsius": -7,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 231,
+              "knots": 38,
+              "celsius": -8,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 234,
+              "knots": 48,
+              "celsius": -11,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 238,
+              "knots": 70,
+              "celsius": -14,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 239,
+              "knots": 79,
+              "celsius": -19,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 243,
+              "knots": 82,
+              "celsius": -25,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 245,
+              "knots": 97,
+              "celsius": -31,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 241,
+              "knots": 100,
+              "celsius": -40,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 246,
+              "knots": 111,
+              "celsius": -46,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 249,
+              "knots": 126,
+              "celsius": -52,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 253,
+              "knots": 131,
+              "celsius": -52,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 251,
+              "knots": 115,
+              "celsius": -51,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 245,
+              "knots": 94,
+              "celsius": -49,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 244,
+              "knots": 91,
+              "celsius": -51,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 243,
+              "knots": 88,
+              "celsius": -52,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 243,
+              "knots": 78,
+              "celsius": -53,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 243,
+              "knots": 69,
+              "celsius": -54,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 244,
+              "knots": 60,
+              "celsius": -55,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        },
+        {
+          "validTime": "2026-01-17T15:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-17T13:30:00+0000",
+            "dateEnd": "2026-01-17T16:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 253,
+              "knots": 5,
+              "celsius": -3,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 205,
+              "knots": 38,
+              "celsius": -4,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 220,
+              "knots": 46,
+              "celsius": -8,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 230,
+              "knots": 49,
+              "celsius": -11,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 234,
+              "knots": 62,
+              "celsius": -14,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 239,
+              "knots": 78,
+              "celsius": -18,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 237,
+              "knots": 87,
+              "celsius": -24,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 234,
+              "knots": 93,
+              "celsius": -32,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 241,
+              "knots": 110,
+              "celsius": -39,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 245,
+              "knots": 125,
+              "celsius": -44,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 245,
+              "knots": 129,
+              "celsius": -51,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 246,
+              "knots": 132,
+              "celsius": -53,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 248,
+              "knots": 122,
+              "celsius": -53,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 248,
+              "knots": 107,
+              "celsius": -52,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 246,
+              "knots": 96,
+              "celsius": -51,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 244,
+              "knots": 86,
+              "celsius": -51,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 244,
+              "knots": 77,
+              "celsius": -52,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 245,
+              "knots": 69,
+              "celsius": -54,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 246,
+              "knots": 59,
+              "celsius": -56,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        },
+        {
+          "validTime": "2026-01-17T18:00:00+0000",
+          "period": {
+            "dateStart": "2026-01-17T16:30:00+0000",
+            "dateEnd": "2026-01-17T19:30:00+0000"
+          },
+          "windTemps": {
+            "0": {
+              "directionFromTrue": 199,
+              "knots": 11,
+              "celsius": 0,
+              "altitude": 0,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "3000": {
+              "directionFromTrue": 209,
+              "knots": 43,
+              "celsius": -3,
+              "altitude": 3000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "6000": {
+              "directionFromTrue": 222,
+              "knots": 42,
+              "celsius": -6,
+              "altitude": 6000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "9000": {
+              "directionFromTrue": 227,
+              "knots": 51,
+              "celsius": -9,
+              "altitude": 9000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "12000": {
+              "directionFromTrue": 230,
+              "knots": 63,
+              "celsius": -13,
+              "altitude": 12000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "15000": {
+              "directionFromTrue": 232,
+              "knots": 84,
+              "celsius": -18,
+              "altitude": 15000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "18000": {
+              "directionFromTrue": 234,
+              "knots": 99,
+              "celsius": -24,
+              "altitude": 18000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "21000": {
+              "directionFromTrue": 235,
+              "knots": 104,
+              "celsius": -31,
+              "altitude": 21000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "24000": {
+              "directionFromTrue": 239,
+              "knots": 115,
+              "celsius": -38,
+              "altitude": 24000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "27000": {
+              "directionFromTrue": 240,
+              "knots": 124,
+              "celsius": -44,
+              "altitude": 27000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "30000": {
+              "directionFromTrue": 237,
+              "knots": 135,
+              "celsius": -50,
+              "altitude": 30000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "33000": {
+              "directionFromTrue": 241,
+              "knots": 138,
+              "celsius": -53,
+              "altitude": 33000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "36000": {
+              "directionFromTrue": 244,
+              "knots": 127,
+              "celsius": -53,
+              "altitude": 36000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "39000": {
+              "directionFromTrue": 247,
+              "knots": 111,
+              "celsius": -52,
+              "altitude": 39000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "42000": {
+              "directionFromTrue": 244,
+              "knots": 103,
+              "celsius": -52,
+              "altitude": 42000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "45000": {
+              "directionFromTrue": 241,
+              "knots": 95,
+              "celsius": -52,
+              "altitude": 45000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "48000": {
+              "directionFromTrue": 243,
+              "knots": 85,
+              "celsius": -53,
+              "altitude": 48000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "51000": {
+              "directionFromTrue": 245,
+              "knots": 74,
+              "celsius": -55,
+              "altitude": 51000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            },
+            "54000": {
+              "directionFromTrue": 247,
+              "knots": 65,
+              "celsius": -56,
+              "altitude": 54000,
+              "isLightAndVariable": false,
+              "isGreaterThan199Knots": false,
+              "turbulence": false,
+              "icing": false
+            }
+          }
+        }
+      ],
+      "source": "Model"
+    },
+    "mos": {
+      "station": "KPWM",
+      "issued": "2026-01-16T12:30:00+0000",
+      "latitude": 43.645645,
+      "longitude": -70.30862,
+      "forecast": {
+        "text": "",
+        "ident": "KPWM",
+        "dateIssued": "2026-01-16T12:30:00+0000",
+        "period": {
+          "dateStart": "2026-01-16T13:30:00+0000",
+          "dateEnd": "2026-01-17T14:30:00+0000"
+        },
+        "lat": 43.645645,
+        "lon": -70.30862,
+        "elevationFt": 76.0,
+        "conditions": [
+          {
+            "text": "",
+            "tempMinC": -6.666666666666667,
+            "tempMaxC": -6.666666666666667,
+            "dewpointMinC": -15.555555555555555,
+            "dewpointMaxC": -15.555555555555555,
+            "flightRules": "vfr",
+            "cloudLayers": [
+              {
+                "coverage": "few",
+                "altitudeFt": 12000.0,
+                "ceiling": false,
+                "altitudeQualifier": 1
+              }
+            ],
+            "cloudLayersV2": [
+              {
+                "coverage": "few",
+                "altitudeFt": 12000.0,
+                "ceiling": false,
+                "altitudeQualifier": 1
+              }
+            ],
+            "weather": [],
+            "visibility": {
+              "distanceSm": 6.0,
+              "distanceQualifier": 1
+            },
+            "wind": {
+              "speedKts": 17.0,
+              "gustSpeedKts": 26.0,
+              "direction": 290,
+              "from": 290,
+              "variable": false
+            },
+            "period": {
+              "dateStart": "2026-01-16T14:30:00+0000",
+              "dateEnd": "2026-01-16T15:30:00+0000"
+            },
+            "turbulence": [],
+            "icing": []
+          },
+          {
+            "text": "",
+            "tempMinC": -5.555555555555555,
+            "tempMaxC": -2.2222222222222223,
+            "dewpointMinC": -16.666666666666668,
+            "dewpointMaxC": -16.11111111111111,
+            "flightRules": "vfr",
+            "cloudLayers": [
+              {
+                "coverage": "skc",
+                "altitudeFt": 12000.0,
+                "ceiling": false,
+                "altitudeQualifier": 1
+              }
+            ],
+            "cloudLayersV2": [
+              {
+                "coverage": "skc",
+                "altitudeFt": 12000.0,
+                "ceiling": false,
+                "altitudeQualifier": 1
+              }
+            ],
+            "weather": [],
+            "visibility": {
+              "distanceSm": 6.0,
+              "distanceQualifier": 1
+            },
+            "wind": {
+              "speedKts": 16.0,
+              "gustSpeedKts": 26.0,
+              "direction": 280,
+              "from": 280,
+              "variable": false
+            },
+            "period": {
+              "dateStart": "2026-01-16T15:30:00+0000",
+              "dateEnd": "2026-01-16T19:30:00+0000"
+            },
+            "turbulence": [],
+            "icing": []
+          },
+          {
+            "text": "",
+            "tempMinC": -3.888888888888889,
+            "tempMaxC": -1.6666666666666667,
+            "dewpointMinC": -16.666666666666668,
+            "dewpointMaxC": -16.666666666666668,
+            "flightRules": "vfr",
+            "cloudLayers": [
+              {
+                "coverage": "skc",
+                "altitudeFt": 12000.0,
+                "ceiling": false,
+                "altitudeQualifier": 1
+              }
+            ],
+            "cloudLayersV2": [
+              {
+                "coverage": "skc",
+                "altitudeFt": 12000.0,
+                "ceiling": false,
+                "altitudeQualifier": 1
+              }
+            ],
+            "weather": [],
+            "visibility": {
+              "distanceSm": 6.0,
+              "distanceQualifier": 1
+            },
+            "wind": {
+              "speedKts": 11.0,
+              "gustSpeedKts": 23.0,
+              "direction": 280,
+              "from": 280,
+              "variable": false
+            },
+            "period": {
+              "dateStart": "2026-01-16T19:30:00+0000",
+              "dateEnd": "2026-01-17T00:30:00+0000"
+            },
+            "turbulence": [],
+            "icing": []
+          },
+          {
+            "text": "",
+            "tempMinC": -6.111111111111111,
+            "tempMaxC": -4.444444444444445,
+            "dewpointMinC": -16.666666666666668,
+            "dewpointMaxC": -13.333333333333334,
+            "flightRules": "vfr",
+            "cloudLayers": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 12000.0,
+                "ceiling": true,
+                "altitudeQualifier": 1
+              }
+            ],
+            "cloudLayersV2": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 12000.0,
+                "ceiling": true,
+                "altitudeQualifier": 1
+              }
+            ],
+            "weather": [],
+            "visibility": {
+              "distanceSm": 6.0,
+              "distanceQualifier": 1
+            },
+            "wind": {
+              "speedKts": 3.0,
+              "direction": 230,
+              "from": 230,
+              "variable": false
+            },
+            "period": {
+              "dateStart": "2026-01-17T00:30:00+0000",
+              "dateEnd": "2026-01-17T08:30:00+0000"
+            },
+            "turbulence": [],
+            "icing": []
+          },
+          {
+            "text": "",
+            "tempMinC": -5.555555555555555,
+            "tempMaxC": -5.555555555555555,
+            "dewpointMinC": -12.222222222222221,
+            "dewpointMaxC": -11.11111111111111,
+            "flightRules": "vfr",
+            "cloudLayers": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 9000.0,
+                "ceiling": true,
+                "altitudeQualifier": 0
+              }
+            ],
+            "cloudLayersV2": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 9000.0,
+                "ceiling": true,
+                "altitudeQualifier": 0
+              }
+            ],
+            "weather": [],
+            "visibility": {
+              "distanceSm": 6.0,
+              "distanceQualifier": 1
+            },
+            "wind": {
+              "speedKts": 3.0,
+              "direction": 190,
+              "from": 190,
+              "variable": false
+            },
+            "period": {
+              "dateStart": "2026-01-17T08:30:00+0000",
+              "dateEnd": "2026-01-17T10:30:00+0000"
+            },
+            "turbulence": [],
+            "icing": []
+          },
+          {
+            "text": "",
+            "tempMinC": -5.555555555555555,
+            "tempMaxC": -5.555555555555555,
+            "dewpointMinC": -10.0,
+            "dewpointMaxC": -10.0,
+            "flightRules": "mvfr",
+            "cloudLayers": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 4000.0,
+                "ceiling": true,
+                "altitudeQualifier": 0
+              }
+            ],
+            "cloudLayersV2": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 4000.0,
+                "ceiling": true,
+                "altitudeQualifier": 0
+              }
+            ],
+            "weather": [
+              "snow"
+            ],
+            "visibility": {
+              "distanceSm": 4.0,
+              "distanceQualifier": 0
+            },
+            "wind": {
+              "speedKts": 0.0,
+              "direction": 0,
+              "from": 0,
+              "variable": false
+            },
+            "period": {
+              "dateStart": "2026-01-17T10:30:00+0000",
+              "dateEnd": "2026-01-17T11:30:00+0000"
+            },
+            "turbulence": [],
+            "icing": []
+          },
+          {
+            "text": "",
+            "tempMinC": -5.555555555555555,
+            "tempMaxC": -3.3333333333333335,
+            "dewpointMinC": -8.88888888888889,
+            "dewpointMaxC": -6.111111111111111,
+            "flightRules": "ifr",
+            "cloudLayers": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 4000.0,
+                "ceiling": true,
+                "altitudeQualifier": 0
+              }
+            ],
+            "cloudLayersV2": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 4000.0,
+                "ceiling": true,
+                "altitudeQualifier": 0
+              }
+            ],
+            "weather": [
+              "snow"
+            ],
+            "visibility": {
+              "distanceSm": 1.5,
+              "distanceQualifier": 0
+            },
+            "wind": {
+              "speedKts": 4.0,
+              "direction": 170,
+              "from": 170,
+              "variable": false
+            },
+            "period": {
+              "dateStart": "2026-01-17T11:30:00+0000",
+              "dateEnd": "2026-01-17T14:30:00+0000"
+            },
+            "turbulence": [],
+            "icing": []
+          },
+          {
+            "text": "",
+            "tempMinC": -4.444444444444445,
+            "tempMaxC": -4.444444444444445,
+            "dewpointMinC": -7.777777777777778,
+            "dewpointMaxC": -7.777777777777778,
+            "flightRules": "vfr",
+            "cloudLayers": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 4000.0,
+                "ceiling": true,
+                "altitudeQualifier": 0
+              }
+            ],
+            "cloudLayersV2": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 4000.0,
+                "ceiling": true,
+                "altitudeQualifier": 0
+              }
+            ],
+            "weather": [
+              "snow"
+            ],
+            "visibility": {
+              "distanceSm": 6.0,
+              "distanceQualifier": 0
+            },
+            "wind": {
+              "speedKts": 5.0,
+              "direction": 180,
+              "from": 180,
+              "variable": false
+            },
+            "period": {
+              "dateStart": "2026-01-17T14:30:00+0000",
+              "dateEnd": "2026-01-17T15:00:00+0000"
+            },
+            "turbulence": [],
+            "icing": []
+          },
+          {
+            "text": "",
+            "tempMinC": -1.1111111111111112,
+            "tempMaxC": 1.6666666666666667,
+            "dewpointMinC": -4.444444444444445,
+            "dewpointMaxC": -2.7777777777777777,
+            "flightRules": "ifr",
+            "cloudLayers": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 1500.0,
+                "ceiling": true,
+                "altitudeQualifier": 0
+              }
+            ],
+            "cloudLayersV2": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 1500.0,
+                "ceiling": true,
+                "altitudeQualifier": 0
+              }
+            ],
+            "weather": [
+              "mist",
+              "snow"
+            ],
+            "visibility": {
+              "distanceSm": 1.5,
+              "distanceQualifier": 0
+            },
+            "wind": {
+              "speedKts": 6.0,
+              "direction": 210,
+              "from": 210,
+              "variable": false
+            },
+            "period": {
+              "dateStart": "2026-01-17T15:00:00+0000",
+              "dateEnd": "2026-01-17T21:00:00+0000"
+            },
+            "turbulence": [],
+            "icing": []
+          },
+          {
+            "text": "",
+            "tempMinC": 1.6666666666666667,
+            "tempMaxC": 1.6666666666666667,
+            "dewpointMinC": -2.7777777777777777,
+            "dewpointMaxC": -2.7777777777777777,
+            "flightRules": "ifr",
+            "cloudLayers": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 700.0,
+                "ceiling": true,
+                "altitudeQualifier": 0
+              }
+            ],
+            "cloudLayersV2": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 700.0,
+                "ceiling": true,
+                "altitudeQualifier": 0
+              }
+            ],
+            "weather": [
+              "mist",
+              "snow"
+            ],
+            "visibility": {
+              "distanceSm": 2.0,
+              "distanceQualifier": 0
+            },
+            "wind": {
+              "speedKts": 7.0,
+              "direction": 220,
+              "from": 220,
+              "variable": false
+            },
+            "period": {
+              "dateStart": "2026-01-17T21:00:00+0000",
+              "dateEnd": "2026-01-18T00:00:00+0000"
+            },
+            "turbulence": [],
+            "icing": []
+          },
+          {
+            "text": "",
+            "tempMinC": 0.5555555555555556,
+            "tempMaxC": 0.5555555555555556,
+            "dewpointMinC": -3.3333333333333335,
+            "dewpointMaxC": -3.3333333333333335,
+            "flightRules": "lifr",
+            "cloudLayers": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 300.0,
+                "ceiling": true,
+                "altitudeQualifier": 0
+              }
+            ],
+            "cloudLayersV2": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 300.0,
+                "ceiling": true,
+                "altitudeQualifier": 0
+              }
+            ],
+            "weather": [
+              "mist"
+            ],
+            "visibility": {
+              "distanceSm": 4.0,
+              "distanceQualifier": 0
+            },
+            "wind": {
+              "speedKts": 9.0,
+              "direction": 250,
+              "from": 250,
+              "variable": false
+            },
+            "period": {
+              "dateStart": "2026-01-18T00:00:00+0000",
+              "dateEnd": "2026-01-18T03:00:00+0000"
+            },
+            "turbulence": [],
+            "icing": []
+          },
+          {
+            "text": "",
+            "tempMinC": -1.1111111111111112,
+            "tempMaxC": -1.1111111111111112,
+            "dewpointMinC": -5.0,
+            "dewpointMaxC": -5.0,
+            "flightRules": "vfr",
+            "cloudLayers": [
+              {
+                "coverage": "sct",
+                "altitudeFt": 12000.0,
+                "ceiling": false,
+                "altitudeQualifier": 1
+              }
+            ],
+            "cloudLayersV2": [
+              {
+                "coverage": "sct",
+                "altitudeFt": 12000.0,
+                "ceiling": false,
+                "altitudeQualifier": 1
+              }
+            ],
+            "weather": [],
+            "visibility": {
+              "distanceSm": 6.0,
+              "distanceQualifier": 1
+            },
+            "wind": {
+              "speedKts": 7.0,
+              "direction": 260,
+              "from": 260,
+              "variable": false
+            },
+            "period": {
+              "dateStart": "2026-01-18T03:00:00+0000",
+              "dateEnd": "2026-01-18T06:00:00+0000"
+            },
+            "turbulence": [],
+            "icing": []
+          },
+          {
+            "text": "",
+            "tempMinC": -3.3333333333333335,
+            "tempMaxC": -2.7777777777777777,
+            "dewpointMinC": -5.555555555555555,
+            "dewpointMaxC": -5.0,
+            "flightRules": "vfr",
+            "cloudLayers": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 12000.0,
+                "ceiling": true,
+                "altitudeQualifier": 1
+              }
+            ],
+            "cloudLayersV2": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 12000.0,
+                "ceiling": true,
+                "altitudeQualifier": 1
+              }
+            ],
+            "weather": [],
+            "visibility": {
+              "distanceSm": 6.0,
+              "distanceQualifier": 1
+            },
+            "wind": {
+              "speedKts": 4.0,
+              "direction": 220,
+              "from": 220,
+              "variable": false
+            },
+            "period": {
+              "dateStart": "2026-01-18T06:00:00+0000",
+              "dateEnd": "2026-01-18T15:00:00+0000"
+            },
+            "turbulence": [],
+            "icing": []
+          },
+          {
+            "text": "",
+            "tempMinC": 1.1111111111111112,
+            "tempMaxC": 1.1111111111111112,
+            "dewpointMinC": -3.3333333333333335,
+            "dewpointMaxC": -3.3333333333333335,
+            "flightRules": "vfr",
+            "cloudLayers": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 9000.0,
+                "ceiling": true,
+                "altitudeQualifier": 0
+              }
+            ],
+            "cloudLayersV2": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 9000.0,
+                "ceiling": true,
+                "altitudeQualifier": 0
+              }
+            ],
+            "weather": [],
+            "visibility": {
+              "distanceSm": 6.0,
+              "distanceQualifier": 1
+            },
+            "wind": {
+              "speedKts": 7.0,
+              "direction": 210,
+              "from": 210,
+              "variable": false
+            },
+            "period": {
+              "dateStart": "2026-01-18T15:00:00+0000",
+              "dateEnd": "2026-01-18T18:00:00+0000"
+            },
+            "turbulence": [],
+            "icing": []
+          },
+          {
+            "text": "",
+            "tempMinC": 3.3333333333333335,
+            "tempMaxC": 3.3333333333333335,
+            "dewpointMinC": -2.7777777777777777,
+            "dewpointMaxC": -2.7777777777777777,
+            "flightRules": "vfr",
+            "cloudLayers": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 9000.0,
+                "ceiling": true,
+                "altitudeQualifier": 0
+              }
+            ],
+            "cloudLayersV2": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 9000.0,
+                "ceiling": true,
+                "altitudeQualifier": 0
+              }
+            ],
+            "weather": [],
+            "visibility": {
+              "distanceSm": 6.0,
+              "distanceQualifier": 1
+            },
+            "wind": {
+              "speedKts": 9.0,
+              "direction": 200,
+              "from": 200,
+              "variable": false
+            },
+            "period": {
+              "dateStart": "2026-01-18T18:00:00+0000",
+              "dateEnd": "2026-01-19T00:00:00+0000"
+            },
+            "turbulence": [],
+            "icing": []
+          },
+          {
+            "text": "",
+            "tempMinC": 1.1111111111111112,
+            "tempMaxC": 1.1111111111111112,
+            "dewpointMinC": -2.7777777777777777,
+            "dewpointMaxC": -2.7777777777777777,
+            "flightRules": "vfr",
+            "cloudLayers": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 4000.0,
+                "ceiling": true,
+                "altitudeQualifier": 0
+              }
+            ],
+            "cloudLayersV2": [
+              {
+                "coverage": "ovc",
+                "altitudeFt": 4000.0,
+                "ceiling": true,
+                "altitudeQualifier": 0
+              }
+            ],
+            "weather": [
+              "snow"
+            ],
+            "visibility": {
+              "distanceSm": 6.0,
+              "distanceQualifier": 0
+            },
+            "wind": {
+              "speedKts": 3.0,
+              "direction": 350,
+              "from": 350,
+              "variable": false
+            },
+            "period": {
+              "dateStart": "2026-01-19T00:00:00+0000",
+              "dateEnd": "2026-01-19T06:00:00+0000"
+            },
+            "turbulence": [],
+            "icing": []
+          }
+        ]
+      }
+    }
+  }
+}

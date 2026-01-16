@@ -7,16 +7,22 @@
 
 import Foundation
 
+protocol URLSessionProtocol: Sendable {
+    func data(for request: URLRequest) async throws -> (Data, URLResponse)
+}
+
+extension URLSession: URLSessionProtocol {}
+
 protocol HTTPClientProtocol: Sendable {
     func fetch<T: Decodable>(url: URL, headers: [String: String]) async throws -> T
 }
 
 final class HTTPClient: HTTPClientProtocol, Sendable {
     
-    private let session: URLSession
+    private let session: URLSessionProtocol
     private let decoder: JSONDecoder
     
-    init(session: URLSession = .shared) {
+    init(session: URLSessionProtocol = URLSession.shared) {
         self.session = session
         self.decoder = Self.makeDecoder()
     }
