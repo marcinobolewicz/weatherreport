@@ -8,6 +8,8 @@
 import Foundation
 @testable import WeatherReport
 
+// MARK: - Mock HTTP Client
+
 final class MockHTTPClient: HTTPClientProtocol, @unchecked Sendable {
     var lastRequestedURL: URL?
     var lastRequestedHeaders: [String: String]?
@@ -24,6 +26,8 @@ final class MockHTTPClient: HTTPClientProtocol, @unchecked Sendable {
         throw NetworkError.noData
     }
 }
+
+// MARK: - Mock URL Session
 
 final class MockURLSession: URLSessionProtocol, @unchecked Sendable {
     private let mockData: Data
@@ -42,5 +46,17 @@ final class MockURLSession: URLSessionProtocol, @unchecked Sendable {
             headerFields: nil
         )!
         return (mockData, response)
+    }
+}
+
+// MARK: - Mock UserDefaults
+
+extension UserDefaults {
+    /// Creates an isolated UserDefaults instance for testing
+    static func makeMock() -> UserDefaults {
+        let suiteName = "test_\(UUID().uuidString)"
+        let defaults = UserDefaults(suiteName: suiteName)!
+        defaults.removePersistentDomain(forName: suiteName)
+        return defaults
     }
 }
