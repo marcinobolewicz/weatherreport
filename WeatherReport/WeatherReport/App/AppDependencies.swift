@@ -8,11 +8,17 @@
 import Foundation
 
 /// Composition Root for dependency injection
+@MainActor
 final class AppDependencies {
     
     let weatherService: WeatherServiceProtocol
+    let airportsStorage: AirportsStorage
     
-    init(httpClient: HTTPClientProtocol = HTTPClient()) {
+    init(
+        httpClient: HTTPClientProtocol = HTTPClient(),
+        userDefaults: UserDefaults = .standard
+    ) {
         self.weatherService = WeatherService(httpClient: httpClient)
+        self.airportsStorage = AirportsStorage(defaults: userDefaults)
     }
 }

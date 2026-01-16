@@ -10,11 +10,13 @@ import SwiftUI
 @main
 struct WeatherReportApp: App {
     
-    private let dependencies = AppDependencies()
+    @State private var router = AppRouter()
+    @State private var dependencies = AppDependencies()
     
     var body: some Scene {
         WindowGroup {
-            Text("WeatherReport")
+            AirportsListView(storage: dependencies.airportsStorage)
+                .environment(router)
         }
     }
 }
