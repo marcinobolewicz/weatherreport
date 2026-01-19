@@ -16,14 +16,22 @@ actor WeatherDateFormatter: WeatherDateFormatting {
     private let zuluTimeFormatter: DateFormatter
     private let zuluRangeFormatter: DateIntervalFormatter
 
-    init() {
+    init(
+        locale: Locale = .current,
+        calendar: Calendar = .current,
+        timeZone: TimeZone = .gmt
+    ) {
         let timeFormatter = DateFormatter()
-        timeFormatter.timeZone = TimeZone(secondsFromGMT: 0)
+        timeFormatter.locale = locale
+        timeFormatter.calendar = calendar
+        timeFormatter.timeZone = timeZone
         timeFormatter.dateFormat = "HH:mm'Z'"
         self.zuluTimeFormatter = timeFormatter
 
         let rangeFormatter = DateIntervalFormatter()
-        rangeFormatter.timeZone = TimeZone(secondsFromGMT: 0)
+        rangeFormatter.locale = locale
+        rangeFormatter.calendar = calendar
+        rangeFormatter.timeZone = timeZone
         rangeFormatter.dateTemplate = "d MMM HH:mm'Z'"
         self.zuluRangeFormatter = rangeFormatter
     }
@@ -34,5 +42,11 @@ actor WeatherDateFormatter: WeatherDateFormatting {
 
     func formatZuluRange(_ start: Date, _ end: Date) -> String {
         zuluRangeFormatter.string(from: start, to: end)
+    }
+}
+
+extension TimeZone {
+    static var gmt: TimeZone {
+        TimeZone(secondsFromGMT: 0) ?? .current
     }
 }
