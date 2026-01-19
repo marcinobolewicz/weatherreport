@@ -7,11 +7,10 @@
 
 import SwiftUI
 
-/// Handles persistent storage of airport identifiers using UserDefaults
 @MainActor
-protocol AirportsStorageProtocol: Sendable {
+protocol AirportsStorageProtocol {
     var airports: [String] { get }
-    func add(_ identifier: String) -> Bool
+    @discardableResult func add(_ identifier: String) -> Bool
     func remove(at offsets: IndexSet)
     func contains(_ identifier: String) -> Bool
 }
@@ -35,16 +34,11 @@ final class AirportsStorage: AirportsStorageProtocol {
     }
     
     // MARK: - Public Methods
-    
-    /// Adds a new airport identifier. Returns true if added, false if duplicate.
+
     @discardableResult
     func add(_ identifier: String) -> Bool {
         let normalized = normalize(identifier)
-        
-        guard !normalized.isEmpty, !airports.contains(normalized) else {
-            return false
-        }
-        
+        guard !normalized.isEmpty, !airports.contains(normalized) else { return false }
         airports.append(normalized)
         save()
         return true
@@ -63,7 +57,6 @@ final class AirportsStorage: AirportsStorageProtocol {
     
     private func loadAirports() -> [String] {
         guard let saved = defaults.stringArray(forKey: Constants.storageKey) else {
-            // First launch - seed with default airports
             let defaultList = Constants.defaultAirports
             defaults.set(defaultList, forKey: Constants.storageKey)
             return defaultList

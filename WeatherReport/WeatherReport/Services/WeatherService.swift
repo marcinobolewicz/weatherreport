@@ -8,7 +8,7 @@
 import Foundation
 
 protocol WeatherServiceProtocol: Sendable {
-    func fetchWeatherReport(for airportIdentifier: String) async throws -> WeatherReportDTO
+    func fetchReport(for airportIdentifier: String) async throws -> WeatherReportDTO
 }
 
 final class WeatherService: WeatherServiceProtocol, Sendable {
@@ -26,7 +26,7 @@ final class WeatherService: WeatherServiceProtocol, Sendable {
         self.baseURL = baseURL
     }
     
-    func fetchWeatherReport(for airportIdentifier: String) async throws -> WeatherReportDTO {
+    func fetchReport(for airportIdentifier: String) async throws -> WeatherReportDTO {
         let identifier = airportIdentifier.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
         
         guard !identifier.isEmpty else {

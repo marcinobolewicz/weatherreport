@@ -18,13 +18,15 @@ protocol HTTPClientProtocol: Sendable {
 }
 
 final class HTTPClient: HTTPClientProtocol, Sendable {
-    
     private let session: URLSessionProtocol
-    private let decoder: JSONDecoder
+    private var decoder: JSONDecoder {
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        return decoder
+    }
     
     init(session: URLSessionProtocol = URLSession.shared) {
         self.session = session
-        self.decoder = Self.makeDecoder()
     }
     
     func fetch<T: Decodable>(url: URL, headers: [String: String] = [:]) async throws -> T {
@@ -51,11 +53,5 @@ final class HTTPClient: HTTPClientProtocol, Sendable {
         } catch {
             throw NetworkError.decodingFailed
         }
-    }
-    
-    private static func makeDecoder() -> JSONDecoder {
-        let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .iso8601
-        return decoder
     }
 }

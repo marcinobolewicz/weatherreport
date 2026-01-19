@@ -13,6 +13,7 @@ struct WeatherReportDTO: Decodable, Equatable, Sendable {
 
 struct ReportDTO: Decodable, Equatable, Sendable {
     let conditions: ConditionsDTO
+    let forecast: ForecastDTO
 }
 
 /// METAR weather conditions
@@ -32,10 +33,50 @@ struct ConditionsDTO: Decodable, Equatable, Sendable {
     let visibility: VisibilityDTO
     let wind: WindDTO
 }
+// MARK: - Forecast (TAF)
 
+struct ForecastDTO: Decodable, Equatable, Sendable {
+    let text: String           // raw TAF
+    let ident: String
+    let dateIssued: Date
+    let period: PeriodDTO?
+
+    let lat: Double?
+    let lon: Double?
+    let elevationFt: Double?
+
+    let conditions: [ForecastConditionDTO]
+}
+
+struct ForecastConditionDTO: Decodable, Equatable, Sendable {
+    let text: String
+    let dateIssued: Date?
+
+    let flightRules: String
+
+    let weather: [String]
+    let visibility: VisibilityDTO
+    let wind: WindDTO
+
+    let period: PeriodDTO?
+}
+
+// MARK: - Shared primitives
+
+struct PeriodDTO: Decodable, Equatable, Sendable {
+    let dateStart: Date
+    let dateEnd: Date
+}
 struct VisibilityDTO: Decodable, Equatable, Sendable {
-    /// Visibility in statute miles
     let distanceSm: Double
+    let distanceMeter: Double?
+    let distanceQualifier: Int?
+
+    let prevailingVisSm: Double?
+    let prevailingVisMeter: Double?
+    let prevailingVisDistanceQualifier: Int?
+
+    let visReportedInMetric: Bool?
 }
 
 struct WindDTO: Decodable, Equatable, Sendable {
@@ -45,8 +86,9 @@ struct WindDTO: Decodable, Equatable, Sendable {
 }
 
 struct CloudLayerDTO: Decodable, Equatable, Sendable {
-    /// Coverage: few/sct/bkn/ovc
     let coverage: String
     let altitudeFt: Double
     let ceiling: Bool
+
+    let altitudeQualifier: Int?
 }
