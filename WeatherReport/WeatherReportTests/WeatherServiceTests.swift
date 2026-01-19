@@ -17,7 +17,7 @@ struct WeatherServiceTests {
         mockClient.resultToReturn = expectedDTO
         let service = WeatherService(httpClient: mockClient)
         
-        let result = try await service.fetchWeatherReport(for: "kpwm")
+        let result = try await service.fetchReport(for: "kpwm")
         
         #expect(result == expectedDTO)
     }
@@ -26,7 +26,7 @@ struct WeatherServiceTests {
         let service = makeService()
         
         await #expect(throws: NetworkError.invalidURL) {
-            try await service.fetchWeatherReport(for: "")
+            try await service.fetchReport(for: "")
         }
     }
     
@@ -34,7 +34,7 @@ struct WeatherServiceTests {
         let service = makeService()
         
         await #expect(throws: NetworkError.invalidURL) {
-            try await service.fetchWeatherReport(for: "   ")
+            try await service.fetchReport(for: "   ")
         }
     }
     
@@ -42,7 +42,7 @@ struct WeatherServiceTests {
         let mockClient = MockHTTPClient()
         let service = WeatherService(httpClient: mockClient)
         
-        _ = try? await service.fetchWeatherReport(for: "KPWM")
+        _ = try? await service.fetchReport(for: "KPWM")
         
         #expect(mockClient.lastRequestedURL?.absoluteString.contains("kpwm") == true)
     }
@@ -51,7 +51,7 @@ struct WeatherServiceTests {
         let mockClient = MockHTTPClient()
         let service = WeatherService(httpClient: mockClient)
         
-        _ = try? await service.fetchWeatherReport(for: "  kpwm  ")
+        _ = try? await service.fetchReport(for: "  kpwm  ")
         
         let urlString = mockClient.lastRequestedURL?.absoluteString ?? ""
         #expect(urlString.hasSuffix("kpwm"))
@@ -61,7 +61,7 @@ struct WeatherServiceTests {
         let mockClient = MockHTTPClient()
         let service = WeatherService(httpClient: mockClient)
         
-        _ = try? await service.fetchWeatherReport(for: "kpwm")
+        _ = try? await service.fetchReport(for: "kpwm")
         
         #expect(mockClient.lastRequestedHeaders?["ff-coding-exercise"] == "1")
     }

@@ -15,7 +15,7 @@ struct WeatherReportApp: App {
     
     var body: some Scene {
         WindowGroup {
-            AirportsListView(storage: dependencies.airportsStorage)
+            RootView(dependencies: dependencies)
                 .environment(router)
         }
     }
