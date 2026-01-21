@@ -73,3 +73,45 @@ private struct ForecastPeriodRow: View {
         .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 }
+
+#Preview("Forecast – Sample") {
+    ForecastView(
+        forecastViewData: .preview
+    )
+}
+
+extension ForecastViewData {
+    static let preview = ForecastViewData(
+        periods: [
+            ForecastPeriodViewData(
+                id: "1",
+                title: "Afternoon",
+                timeRangeText: "20 Jan 14:00–20:00 UTC",
+                flightRulesText: "VFR",
+                windText: "270° at 12 kt",
+                visibilityText: "10 SM"
+            ),
+            ForecastPeriodViewData(
+                id: "2",
+                title: "Evening",
+                timeRangeText: "20 Jan 20:00–02:00 UTC",
+                flightRulesText: "MVFR",
+                windText: "240° at 18 kt",
+                visibilityText: "5 SM"
+            ),
+            ForecastPeriodViewData(
+                id: "3",
+                title: "Overnight",
+                timeRangeText: "21 Jan 02:00–08:00 UTC",
+                flightRulesText: "IFR",
+                windText: "210° at 8 kt",
+                visibilityText: "2 SM"
+            )
+        ],
+        rawTAFText: """
+        KPWM 201130Z 2012/2112 27012KT P6SM FEW025
+          FM202000 24018KT 5SM -RA BKN020
+          FM210200 21008KT 2SM BR OVC008
+        """
+    )
+}

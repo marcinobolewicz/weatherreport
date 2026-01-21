@@ -15,7 +15,7 @@ struct WeatherServiceTests {
         let mockClient = MockHTTPClient()
         let expectedDTO = try TestFixtures.loadWeatherReportDTO()
         mockClient.resultToReturn = expectedDTO
-        let service = WeatherService(httpClient: mockClient)
+        let service = LiveWeatherService(httpClient: mockClient)
         
         let result = try await service.fetchReport(for: "kpwm")
         
@@ -40,7 +40,7 @@ struct WeatherServiceTests {
     
     @Test func fetchNormalizesIdentifierToLowercase() async throws {
         let mockClient = MockHTTPClient()
-        let service = WeatherService(httpClient: mockClient)
+        let service = LiveWeatherService(httpClient: mockClient)
         
         _ = try? await service.fetchReport(for: "KPWM")
         
@@ -49,7 +49,7 @@ struct WeatherServiceTests {
     
     @Test func fetchTrimsWhitespace() async throws {
         let mockClient = MockHTTPClient()
-        let service = WeatherService(httpClient: mockClient)
+        let service = LiveWeatherService(httpClient: mockClient)
         
         _ = try? await service.fetchReport(for: "  kpwm  ")
         
@@ -59,7 +59,7 @@ struct WeatherServiceTests {
     
     @Test func fetchIncludesRequiredHeader() async throws {
         let mockClient = MockHTTPClient()
-        let service = WeatherService(httpClient: mockClient)
+        let service = LiveWeatherService(httpClient: mockClient)
         
         _ = try? await service.fetchReport(for: "kpwm")
         
@@ -68,7 +68,7 @@ struct WeatherServiceTests {
     
     // MARK: - Helpers
     
-    private func makeService() -> WeatherService {
-        WeatherService(httpClient: MockHTTPClient())
+    private func makeService() -> LiveWeatherService {
+        LiveWeatherService(httpClient: MockHTTPClient())
     }
 }

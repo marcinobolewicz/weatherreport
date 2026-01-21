@@ -5,9 +5,12 @@
 //  Created by Marcin Obolewicz on 19/01/2026.
 //
 
+import Foundation
+
 protocol WeatherDetailsPresenting: Sendable {
     func makeConditions(from dto: WeatherReportDTO) async -> ConditionsViewData
     func makeForecast(from dto: WeatherReportDTO) async -> ForecastViewData
+    func makeReportDateString(from date: Date) async -> String
 }
 
 struct WeatherDetailsPresenter: WeatherDetailsPresenting {
@@ -30,5 +33,9 @@ struct WeatherDetailsPresenter: WeatherDetailsPresenting {
     func makeForecast(from dto: WeatherReportDTO) async -> ForecastViewData {
         let model = mapper.mapForecast(from: dto)
         return await formatter.makeForecastViewData(from: model)
+    }
+    
+    func makeReportDateString(from date: Date) async -> String {
+        await formatter.makeReportDateString(from: date)
     }
 }

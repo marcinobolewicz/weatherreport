@@ -13,15 +13,29 @@ import Foundation
 @MainActor
 struct WeatherDetailsViewModelTests {
     
+    private func makeViewModel(
+        airportIdentifier: String = "KPWM",
+        serviceMode: MockWeatherService.Mode
+    ) -> WeatherDetailsViewModel {
+        let mockService = MockWeatherService(mode: serviceMode)
+        let repository = DefaultWeatherRepository(
+            live: mockService,
+            cache: InMemoryWeatherCacheStore(),
+            coding: DefaultJSONCoding()
+        )
+        let settings = MockAppSettings()
+        return WeatherDetailsViewModel(
+            airportIdentifier: airportIdentifier,
+            appSettings: settings,
+            weatherRepository: repository
+        )
+    }
+
     // MARK: - Initial State
     
     @Test("initial state is idle")
     func initialStateIsIdle() {
-        let mockService = MockWeatherService(mode: .success(.mockKPWM()))
-        let viewModel = WeatherDetailsViewModel(
-            airportIdentifier: "KPWM",
-            weatherService: mockService
-        )
+        let viewModel = makeViewModel(serviceMode: .success(.mockKPWM()))
         
         #expect(viewModel.state == .idle)
         #expect(viewModel.conditions == nil)
@@ -33,12 +47,7 @@ struct WeatherDetailsViewModelTests {
     @Test("onAppear triggers loading and populates data")
     func onAppearTriggersLoadingAndPopulatesData() async throws {
         let dto = WeatherReportDTO.mockKPWM()
-        let mockService = MockWeatherService(mode: .success(dto))
-        
-        let viewModel = WeatherDetailsViewModel(
-            airportIdentifier: "KPWM",
-            weatherService: mockService
-        )
+        let viewModel = makeViewModel(serviceMode: .success(dto))
         
         viewModel.onAppear()
         
@@ -52,11 +61,7 @@ struct WeatherDetailsViewModelTests {
     
     @Test("onAppear does nothing if not idle")
     func onAppearDoesNothingIfNotIdle() async throws {
-        let mockService = MockWeatherService(mode: .success(.mockKPWM()))
-        let viewModel = WeatherDetailsViewModel(
-            airportIdentifier: "KPWM",
-            weatherService: mockService
-        )
+        let viewModel = makeViewModel(serviceMode: .success(.mockKPWM()))
         
         // First call
         viewModel.onAppear()
@@ -77,12 +82,7 @@ struct WeatherDetailsViewModelTests {
     @Test("refresh loads data successfully with real presenter")
     func refreshLoadsDataSuccessfully() async throws {
         let dto = WeatherReportDTO.mockKPWM()
-        let mockService = MockWeatherService(mode: .success(dto))
-        
-        let viewModel = WeatherDetailsViewModel(
-            airportIdentifier: "KPWM",
-            weatherService: mockService
-        )
+        let viewModel = makeViewModel(serviceMode: .success(dto))
         
         viewModel.refresh()
         
@@ -100,12 +100,7 @@ struct WeatherDetailsViewModelTests {
     
     @Test("refresh sets failed state on error")
     func refreshSetsFailedStateOnError() async throws {
-        let mockService = MockWeatherService(mode: .failure(NetworkError.noData))
-        
-        let viewModel = WeatherDetailsViewModel(
-            airportIdentifier: "KPWM",
-            weatherService: mockService
-        )
+        let viewModel = makeViewModel(serviceMode: .failure(NetworkError.noData))
         
         viewModel.refresh()
         
@@ -118,22 +113,14 @@ struct WeatherDetailsViewModelTests {
     
     @Test("selectedTab defaults to conditions")
     func selectedTabDefaultsToConditions() {
-        let mockService = MockWeatherService(mode: .success(.mockKPWM()))
-        let viewModel = WeatherDetailsViewModel(
-            airportIdentifier: "KPWM",
-            weatherService: mockService
-        )
+        let viewModel = makeViewModel(serviceMode: .success(.mockKPWM()))
         
         #expect(viewModel.selectedTab == .conditions)
     }
     
     @Test("selectedTab can be changed")
     func selectedTabCanBeChanged() {
-        let mockService = MockWeatherService(mode: .success(.mockKPWM()))
-        let viewModel = WeatherDetailsViewModel(
-            airportIdentifier: "KPWM",
-            weatherService: mockService
-        )
+        let viewModel = makeViewModel(serviceMode: .success(.mockKPWM()))
         
         viewModel.selectedTab = .forecast
         

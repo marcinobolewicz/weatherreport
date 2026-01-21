@@ -53,3 +53,26 @@ private struct ConditionRow: View {
         }
     }
 }
+
+#Preview("Conditions – Sample") {
+    ConditionsView(
+        conditionsViewData: .preview
+    )
+}
+
+extension ConditionsViewData {
+    static let preview = ConditionsViewData(
+        title: "KPWM",
+        lastUpdatedText: "Last updated: 20 Jan 2026 14:32 UTC",
+        flightRulesText: "VFR",
+        windText: "270° at 12 kt",
+        visibilityText: "10 SM",
+        temperatureText: "3°C",
+        dewpointText: "-2°C",
+        pressureText: "1013 hPa",
+        cloudsText: "FEW 2,500 ft",
+        rawMETARText: """
+        KPWM 201432Z 27012KT 10SM FEW025 03/M02 A2992 RMK AO2
+        """
+    )
+}

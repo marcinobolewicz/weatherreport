@@ -11,10 +11,6 @@ struct AirportsListView: View {
     @Environment(AppRouter.self) private var router
     @Bindable var viewModel: AirportsListViewModel
 
-    private var trimmedInput: String {
-        viewModel.newAirportText.trimmingCharacters(in: .whitespacesAndNewlines)
-    }
-
     var body: some View {
         List {
             Section {

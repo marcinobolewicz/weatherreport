@@ -14,7 +14,7 @@ struct HTTPClientTests {
     @Test func fetchDecodesValidJSONSuccessfully() async throws {
         let jsonData = try TestFixtures.loadJSON(named: "data")
         let mockSession = MockURLSession(data: jsonData, statusCode: 200)
-        let client = HTTPClient(session: mockSession)
+        let client = DefaultHTTPClient(session: mockSession)
         
         let result: WeatherReportDTO = try await client.fetch(
             url: URL(string: "https://example.com")!,
@@ -26,7 +26,7 @@ struct HTTPClientTests {
     
     @Test func fetchThrowsDecodingFailedForInvalidJSON() async {
         let mockSession = MockURLSession(data: Data("invalid json".utf8), statusCode: 200)
-        let client = HTTPClient(session: mockSession)
+        let client = DefaultHTTPClient(session: mockSession)
         
         await #expect(throws: NetworkError.decodingFailed) {
             let _: WeatherReportDTO = try await client.fetch(url: URL(string: "https://example.com")!, headers: [:])
@@ -35,7 +35,7 @@ struct HTTPClientTests {
     
     @Test func fetchThrowsRequestFailedForNon2xxStatus() async {
         let mockSession = MockURLSession(data: Data(), statusCode: 404)
-        let client = HTTPClient(session: mockSession)
+        let client = DefaultHTTPClient(session: mockSession)
         
         await #expect(throws: NetworkError.requestFailed(statusCode: 404)) {
             let _: WeatherReportDTO = try await client.fetch(url: URL(string: "https://example.com")!, headers: [:])
@@ -44,7 +44,7 @@ struct HTTPClientTests {
     
     @Test func fetchThrowsNoDataForEmptyResponse() async {
         let mockSession = MockURLSession(data: Data(), statusCode: 200)
-        let client = HTTPClient(session: mockSession)
+        let client = DefaultHTTPClient(session: mockSession)
         
         await #expect(throws: NetworkError.noData) {
             let _: WeatherReportDTO = try await client.fetch(url: URL(string: "https://example.com")!, headers: [:])

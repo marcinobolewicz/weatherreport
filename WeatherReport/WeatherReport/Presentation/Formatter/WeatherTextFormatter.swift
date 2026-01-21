@@ -8,28 +8,28 @@
 import Foundation
 
 struct WeatherTextFormatter: Sendable {
-    let date: WeatherDateFormatting
-    let number: WeatherNumberFormatting
+    let dateFormatter: WeatherDateFormatting
+    let numberFormatter: WeatherNumberFormatting
 
     init(
-        date: WeatherDateFormatting = WeatherDateFormatter(),
-        number: WeatherNumberFormatting = WeatherNumberFormatter()
+        dateFormatter: WeatherDateFormatting = WeatherDateFormatter(),
+        numberFormatter: WeatherNumberFormatting = WeatherNumberFormatter()
     ) {
-        self.date = date
-        self.number = number
+        self.dateFormatter = dateFormatter
+        self.numberFormatter = numberFormatter
     }
 
     func makeConditionsViewData(from model: ConditionsModel) async -> ConditionsViewData {
-        let lastUpdated = await date.formatZuluTime(model.issuedAt)
+        let lastUpdated = await dateFormatter.formatZuluTime(model.issuedAt)
         return ConditionsViewData(
             title: model.title,
             lastUpdatedText: "Last updated: \(lastUpdated))",
             flightRulesText: model.flightRules.uppercased(),
             windText: windText(model.wind),
             visibilityText: visibilityText(model.visibility),
-            temperatureText: "\(number.formatOneDecimal(model.temperatureC))°C",
-            dewpointText: "\(number.formatOneDecimal(model.dewpointC))°C",
-            pressureText: "\(number.formatOneDecimal(model.pressureHpa)) hPa",
+            temperatureText: "\(numberFormatter.formatOneDecimal(model.temperatureC))°C",
+            dewpointText: "\(numberFormatter.formatOneDecimal(model.dewpointC))°C",
+            pressureText: "\(numberFormatter.formatOneDecimal(model.pressureHpa)) hPa",
             cloudsText: cloudsText(model.cloudLayers),
             rawMETARText: model.rawMETAR
         )
@@ -42,7 +42,7 @@ struct WeatherTextFormatter: Sendable {
         for (index, periodModel) in model.periods.enumerated() {
             let timeRangeText: String
             if let period = periodModel.period {
-                timeRangeText = await date.formatZuluRange(period.start, period.end)
+                timeRangeText = await dateFormatter.formatZuluRange(period.start, period.end)
             } else {
                 timeRangeText = ""
             }
@@ -61,6 +61,10 @@ struct WeatherTextFormatter: Sendable {
         
         return ForecastViewData(periods: periods, rawTAFText: model.rawTAF)
     }
+    
+    func makeReportDateString(from date: Date) async -> String {
+        await dateFormatter.formatZuluTime(date)
+    }
 
     // MARK: - helpers
 
@@ -73,7 +77,7 @@ struct WeatherTextFormatter: Sendable {
     }
 
     private func visibilityText(_ visibility: VisibilityModel) -> String {
-        let formattedValue = number.formatOneDecimal(visibility.distanceSm)
+        let formattedValue = numberFormatter.formatOneDecimal(visibility.distanceSm)
         if visibility.qualifier == 1 { return "P\(formattedValue) SM" }
         return "\(formattedValue) SM"
     }
@@ -86,8 +90,8 @@ struct WeatherTextFormatter: Sendable {
     }
 
     private func periodID(_ period: PeriodModel?) -> String {
-        guard let p = period else { return UUID().uuidString }
-        return "\(p.start.timeIntervalSince1970)-\(p.end.timeIntervalSince1970)"
+        guard let period else { return UUID().uuidString }
+        return "\(period.start.timeIntervalSince1970)-\(period.end.timeIntervalSince1970)"
     }
 }
 

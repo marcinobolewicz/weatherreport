@@ -7,13 +7,13 @@
 
 import Foundation
 
-protocol WeatherServiceProtocol: Sendable {
+protocol WeatherService: Sendable {
     func fetchReport(for airportIdentifier: String) async throws -> WeatherReportDTO
 }
 
-final class WeatherService: WeatherServiceProtocol, Sendable {
+final class LiveWeatherService: WeatherService, Sendable {
     
-    private let httpClient: HTTPClientProtocol
+    private let httpClient: HTTPClient
     private let baseURL: String
     
     private enum Constants {
@@ -21,13 +21,13 @@ final class WeatherService: WeatherServiceProtocol, Sendable {
         static let headerKey = "ff-coding-exercise"
     }
     
-    init(httpClient: HTTPClientProtocol, baseURL: String = Constants.baseURL) {
+    init(httpClient: HTTPClient, baseURL: String = Constants.baseURL) {
         self.httpClient = httpClient
         self.baseURL = baseURL
     }
     
     func fetchReport(for airportIdentifier: String) async throws -> WeatherReportDTO {
-        let identifier = airportIdentifier.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
+        let identifier = AirportKey.normalize(airportIdentifier)
         
         guard !identifier.isEmpty else {
             throw NetworkError.invalidURL
