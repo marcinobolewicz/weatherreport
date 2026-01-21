@@ -7,17 +7,17 @@
 
 import Foundation
 
-struct WeatherReportDTO: Decodable, Equatable, Sendable {
+struct WeatherReportDTO: Codable, Equatable, Sendable {
     let report: ReportDTO
 }
 
-struct ReportDTO: Decodable, Equatable, Sendable {
+struct ReportDTO: Codable, Equatable, Sendable {
     let conditions: ConditionsDTO
     let forecast: ForecastDTO
 }
 
 /// METAR weather conditions
-struct ConditionsDTO: Decodable, Equatable, Sendable {
+struct ConditionsDTO: Codable, Equatable, Sendable {
     /// Raw METAR text
     let text: String
     let ident: String
@@ -35,7 +35,7 @@ struct ConditionsDTO: Decodable, Equatable, Sendable {
 }
 // MARK: - Forecast (TAF)
 
-struct ForecastDTO: Decodable, Equatable, Sendable {
+struct ForecastDTO: Codable, Equatable, Sendable {
     let text: String           // raw TAF
     let ident: String
     let dateIssued: Date
@@ -48,7 +48,7 @@ struct ForecastDTO: Decodable, Equatable, Sendable {
     let conditions: [ForecastConditionDTO]
 }
 
-struct ForecastConditionDTO: Decodable, Equatable, Sendable {
+struct ForecastConditionDTO: Codable, Equatable, Sendable {
     let text: String
     let dateIssued: Date?
 
@@ -63,11 +63,11 @@ struct ForecastConditionDTO: Decodable, Equatable, Sendable {
 
 // MARK: - Shared primitives
 
-struct PeriodDTO: Decodable, Equatable, Sendable {
+struct PeriodDTO: Codable, Equatable, Sendable {
     let dateStart: Date
     let dateEnd: Date
 }
-struct VisibilityDTO: Decodable, Equatable, Sendable {
+struct VisibilityDTO: Codable, Equatable, Sendable {
     let distanceSm: Double
     let distanceMeter: Double?
     let distanceQualifier: Int?
@@ -79,13 +79,13 @@ struct VisibilityDTO: Decodable, Equatable, Sendable {
     let visReportedInMetric: Bool?
 }
 
-struct WindDTO: Decodable, Equatable, Sendable {
+struct WindDTO: Codable, Equatable, Sendable {
     let direction: Int
     let speedKts: Double
     let gustSpeedKts: Double?
 }
 
-struct CloudLayerDTO: Decodable, Equatable, Sendable {
+struct CloudLayerDTO: Codable, Equatable, Sendable {
     let coverage: String
     let altitudeFt: Double
     let ceiling: Bool

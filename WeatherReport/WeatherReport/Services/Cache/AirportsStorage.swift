@@ -8,7 +8,7 @@
 import SwiftUI
 
 @MainActor
-protocol AirportsStorageProtocol {
+protocol AirportsStoring {
     var airports: [String] { get }
     @discardableResult func add(_ identifier: String) -> Bool
     func remove(at offsets: IndexSet)
@@ -17,7 +17,7 @@ protocol AirportsStorageProtocol {
 
 @Observable
 @MainActor
-final class AirportsStorage: AirportsStorageProtocol {
+final class AirportsStorage: AirportsStoring {
     
     private enum Constants {
         static let storageKey = "saved_airports"
@@ -69,8 +69,6 @@ final class AirportsStorage: AirportsStorageProtocol {
     }
     
     private func normalize(_ identifier: String) -> String {
-        identifier
-            .trimmingCharacters(in: .whitespacesAndNewlines)
-            .uppercased()
+        AirportKey.normalize(identifier)
     }
 }

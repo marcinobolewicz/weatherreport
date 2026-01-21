@@ -23,7 +23,8 @@ struct AppNavigationDestinations: ViewModifier {
         case .airportDetails(let id):
             WeatherDetailsView(
                 airportIdentifier: id,
-                weatherService: dependencies.weatherService
+                appSettings: dependencies.appSettings,
+                weatherRepository: dependencies.weatherRepository
             )
         }
     }

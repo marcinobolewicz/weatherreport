@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-final class MockWeatherService: WeatherServiceProtocol {
+final class MockWeatherService: WeatherService {
     enum Mode: Sendable {
         case success(WeatherReportDTO)
         case failure(Error)

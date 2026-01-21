@@ -7,26 +7,26 @@
 
 import Foundation
 
-protocol URLSessionProtocol: Sendable {
+protocol NetworkSessioning: Sendable {
     func data(for request: URLRequest) async throws -> (Data, URLResponse)
 }
 
-extension URLSession: URLSessionProtocol {}
+extension URLSession: NetworkSessioning {}
 
-protocol HTTPClientProtocol: Sendable {
+protocol HTTPClient: Sendable {
     func fetch<T: Decodable>(url: URL, headers: [String: String]) async throws -> T
 }
 
-final class HTTPClient: HTTPClientProtocol, Sendable {
-    private let session: URLSessionProtocol
-    private var decoder: JSONDecoder {
-        let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .iso8601
-        return decoder
-    }
+final class DefaultHTTPClient: HTTPClient, Sendable {
+    private let session: NetworkSessioning
+    private let coding: JSONCoding
     
-    init(session: URLSessionProtocol = URLSession.shared) {
+    init(
+        session: NetworkSessioning = URLSession.shared,
+        coding: JSONCoding = DefaultJSONCoding()
+    ) {
         self.session = session
+        self.coding = coding
     }
     
     func fetch<T: Decodable>(url: URL, headers: [String: String] = [:]) async throws -> T {
@@ -49,7 +49,7 @@ final class HTTPClient: HTTPClientProtocol, Sendable {
         }
         
         do {
-            return try decoder.decode(T.self, from: data)
+            return try coding.makeDecoder().decode(T.self, from: data)
         } catch {
             throw NetworkError.decodingFailed
         }

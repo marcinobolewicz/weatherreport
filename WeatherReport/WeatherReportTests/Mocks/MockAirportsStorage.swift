@@ -10,7 +10,7 @@ import SwiftUI
 @testable import WeatherReport
 
 @MainActor
-final class MockAirportsStorage: AirportsStorageProtocol {
+final class MockAirportsStorage: AirportsStoring {
     private(set) var airports: [String] = []
     private(set) var addedAirports: [String] = []
     private(set) var removedOffsets: [IndexSet] = []
@@ -21,7 +21,7 @@ final class MockAirportsStorage: AirportsStorageProtocol {
     
     @discardableResult
     func add(_ identifier: String) -> Bool {
-        let normalized = identifier.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        let normalized = AirportKey.normalize(airport: identifier)
         guard !normalized.isEmpty, !airports.contains(normalized) else { return false }
         airports.append(normalized)
         addedAirports.append(normalized)
@@ -34,7 +34,7 @@ final class MockAirportsStorage: AirportsStorageProtocol {
     }
     
     func contains(_ identifier: String) -> Bool {
-        let normalized = identifier.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        let normalized = AirportKey.normalize(airport: identifier)
         return airports.contains(normalized)
     }
 }

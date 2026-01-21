@@ -10,21 +10,19 @@ import SwiftUI
 @Observable
 @MainActor
 final class AirportsListViewModel {
-    private let storage: AirportsStorageProtocol
+    private let storage: AirportsStoring
     var newAirportText: String = ""
 
     var airports: [String] {
         storage.airports
     }
 
-    init(storage: AirportsStorageProtocol) {
+    init(storage: AirportsStoring) {
         self.storage = storage
     }
 
     var normalizedAirportCode: String {
-        newAirportText
-            .trimmingCharacters(in: .whitespacesAndNewlines)
-            .uppercased()
+        AirportKey.normalize(newAirportText)
     }
 
     var canAddAirport: Bool {
@@ -32,10 +30,8 @@ final class AirportsListViewModel {
     }
     
     func addAirport(navigateTo: (String) -> Void) {
-        let identifier = newAirportText
-            .trimmingCharacters(in: .whitespaces)
-            .uppercased()
-        
+        let identifier = AirportKey.normalize(newAirportText)
+            
         guard !identifier.isEmpty else { return }
         
         storage.add(identifier)

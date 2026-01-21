@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - Mock HTTP Client
 
-final class MockHTTPClient: HTTPClientProtocol, @unchecked Sendable {
+final class MockHTTPClient: HTTPClient, @unchecked Sendable {
     var lastRequestedURL: URL?
     var lastRequestedHeaders: [String: String]?
     var resultToReturn: Any?
@@ -29,7 +29,7 @@ final class MockHTTPClient: HTTPClientProtocol, @unchecked Sendable {
 
 // MARK: - Mock URL Session
 
-final class MockURLSession: URLSessionProtocol, @unchecked Sendable {
+final class MockURLSession: NetworkSessioning, @unchecked Sendable {
     private let mockData: Data
     private let mockStatusCode: Int
     

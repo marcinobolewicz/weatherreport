@@ -10,11 +10,16 @@ import SwiftUI
 struct WeatherDetailsView: View {
     @State private var viewModel: WeatherDetailsViewModel
 
-    init(airportIdentifier: String, weatherService: WeatherServiceProtocol) {
+    init(
+        airportIdentifier: String,
+        appSettings: AppSettings,
+        weatherRepository: WeatherRepository
+    ) {
         _viewModel = State(
             wrappedValue: WeatherDetailsViewModel(
                 airportIdentifier: airportIdentifier,
-                weatherService: weatherService
+                appSettings: appSettings,
+                weatherRepository: weatherRepository
             )
         )
     }
@@ -24,6 +29,8 @@ struct WeatherDetailsView: View {
         
         VStack(spacing: 0) {
             header
+            
+            infoMessage()
         
             Picker("", selection: $viewModel.selectedTab) {
                 ForEach(DetailTab.allCases, id: \.self) { tab in
@@ -38,6 +45,18 @@ struct WeatherDetailsView: View {
         .navigationTitle(viewModel.airportIdentifier)
         .task { viewModel.onAppear() }
         .refreshable { viewModel.refresh() }
+        .onDisappear { viewModel.onDisappear() }
+    }
+    
+    @ViewBuilder
+    private func infoMessage() -> some View {
+        if let message = viewModel.infoMessage {
+            Text(message)
+                .font(.caption)
+                .foregroundStyle(.secondary)
+                .padding(.horizontal)
+                .padding(.top, 4)
+        }
     }
 
     @ViewBuilder
@@ -77,9 +96,9 @@ struct WeatherDetailsView: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
             
-            Text("Last updated: --")
+            Text("Last updated: \(viewModel.reportDate ?? "--")")
                 .font(.caption)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(viewModel.maxAgeExceeded ? .red : .secondary)
         }
         .padding()
         .frame(maxWidth: .infinity)
@@ -102,7 +121,19 @@ enum DetailTab: CaseIterable {
 }
 
 #Preview {
-    NavigationStack {
-        WeatherDetailsView(airportIdentifier: "KPWM", weatherService: MockWeatherService(mode: .success(WeatherReportDTO.mockKPWM())))
-    }
+    let settings = AppSettings()
+    let mockService = MockWeatherService(mode: .success(.mockKPWM()))
+    let cache = InMemoryWeatherCacheStore()
+
+    let repository = DefaultWeatherRepository(
+        live: mockService,
+        cache: cache,
+        coding: DefaultJSONCoding()
+    )
+
+    WeatherDetailsView(
+        airportIdentifier: "KPWM",
+        appSettings: settings,
+        weatherRepository: repository
+    )
 }
