@@ -77,13 +77,10 @@ debuggability, and minimal overhead — sufficient for storing the latest weathe
 without introducing database or schema complexity.
 
 ## TODO
+ 
+1. **A11y** 
 
-1. **Settings View**
-   - Clear cache, setup maxAge, reload interval
-   
-2. **A11y** 
-
-3. **L10n**
+2. **L10n**
 
 ## Tests
 
