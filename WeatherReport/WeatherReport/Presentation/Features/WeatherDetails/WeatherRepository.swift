@@ -23,6 +23,7 @@ enum ReportEvent: Sendable {
 protocol WeatherRepository: Sendable {
     func observeOnAppear(airport: String) -> AsyncThrowingStream<ReportEvent, Error>
     func refresh(airport: String) async throws -> ReportResult
+    func clearCache() async throws
 }
 
 final class DefaultWeatherRepository: WeatherRepository, Sendable {
@@ -64,6 +65,10 @@ final class DefaultWeatherRepository: WeatherRepository, Sendable {
         await safeSave(dto: dto, key: key)
         return .init(dto: dto, source: .live)
     }
+    
+    func clearCache() async throws {
+        try await cache.deleteAll()
+    }
 }
 
 // MARK: - Observe flow
@@ -100,7 +105,7 @@ private extension DefaultWeatherRepository {
                 return true
             } catch {
                 log("Cache decode failed for \(key): \(error)")
-                try? await cache.deleteEntry(for: key) // self-heal
+                try? await cache.deleteEntry(for: key) 
                 return false
             }
         } catch {

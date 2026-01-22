@@ -11,18 +11,18 @@ actor InMemoryWeatherCacheStore: WeatherCacheStoring {
     private var storage: [String: CachedWeatherEntry] = [:]
 
     func loadEntry(for airport: String) async throws -> CachedWeatherEntry? {
-        storage[normalize(airport)]
+        storage[AirportKey.normalize(airport)]
     }
 
     func saveEntry(_ entry: CachedWeatherEntry, for airport: String) async throws {
-        storage[normalize(airport)] = entry
+        storage[AirportKey.normalize(airport)] = entry
     }
     
     func deleteEntry(for airport: String) async throws {
-        storage[normalize(airport)] = nil
+        storage[AirportKey.normalize(airport)] = nil
     }
     
-    private func normalize(_ airport: String) -> String {
-        AirportKey.normalize(airport)
+    func deleteAll() async throws {
+        storage.removeAll()
     }
 }

@@ -42,9 +42,9 @@ struct WeatherServiceTests {
         let mockClient = MockHTTPClient()
         let service = LiveWeatherService(httpClient: mockClient)
         
-        _ = try? await service.fetchReport(for: "KPWM")
+        _ = try? await service.fetchReport(for: "kpWM")
         
-        #expect(mockClient.lastRequestedURL?.absoluteString.contains("kpwm") == true)
+        #expect(mockClient.lastRequestedURL?.absoluteString.contains("KPWM") == true)
     }
     
     @Test func fetchTrimsWhitespace() async throws {
@@ -54,7 +54,7 @@ struct WeatherServiceTests {
         _ = try? await service.fetchReport(for: "  kpwm  ")
         
         let urlString = mockClient.lastRequestedURL?.absoluteString ?? ""
-        #expect(urlString.hasSuffix("kpwm"))
+        #expect(urlString.hasSuffix("KPWM"))
     }
     
     @Test func fetchIncludesRequiredHeader() async throws {

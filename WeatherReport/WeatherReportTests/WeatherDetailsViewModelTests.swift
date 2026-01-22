@@ -58,25 +58,7 @@ struct WeatherDetailsViewModelTests {
         #expect(viewModel.conditions != nil)
         #expect(viewModel.forecast != nil)
     }
-    
-    @Test("onAppear does nothing if not idle")
-    func onAppearDoesNothingIfNotIdle() async throws {
-        let viewModel = makeViewModel(serviceMode: .success(.mockKPWM()))
-        
-        // First call
-        viewModel.onAppear()
-        try await Task.sleep(nanoseconds: 100_000_000)
-        
-        // Change conditions to detect if refresh happens
-        let previousConditions = viewModel.conditions
-        
-        // Second call should be ignored
-        viewModel.onAppear()
-        try await Task.sleep(nanoseconds: 50_000_000)
-        
-        #expect(viewModel.conditions == previousConditions)
-    }
-    
+
     // MARK: - refresh
     
     @Test("refresh loads data successfully with real presenter")

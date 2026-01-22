@@ -21,7 +21,7 @@ final class MockAirportsStorage: AirportsStoring {
     
     @discardableResult
     func add(_ identifier: String) -> Bool {
-        let normalized = AirportKey.normalize(airport: identifier)
+        let normalized = AirportKey.normalize(identifier)
         guard !normalized.isEmpty, !airports.contains(normalized) else { return false }
         airports.append(normalized)
         addedAirports.append(normalized)
@@ -34,7 +34,7 @@ final class MockAirportsStorage: AirportsStoring {
     }
     
     func contains(_ identifier: String) -> Bool {
-        let normalized = AirportKey.normalize(airport: identifier)
+        let normalized = AirportKey.normalize(identifier)
         return airports.contains(normalized)
     }
 }
