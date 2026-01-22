@@ -63,4 +63,15 @@ actor FileWeatherCacheStore: WeatherCacheStoring {
         let key = AirportKey.normalize(airport)
         return directoryURL.appendingPathComponent("\(key).json")
     }
+    
+    func deleteAll() async throws {
+        if fileManager.fileExists(atPath: directoryURL.path) {
+            try fileManager.removeItem(at: directoryURL)
+        }
+
+        try fileManager.createDirectory(
+            at: directoryURL,
+            withIntermediateDirectories: true
+        )
+    }
 }

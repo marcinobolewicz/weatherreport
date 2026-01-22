@@ -9,6 +9,7 @@ import SwiftUI
 
 enum Route: Hashable {
     case airportDetails(String)
+    case settings
 }
 
 @Observable

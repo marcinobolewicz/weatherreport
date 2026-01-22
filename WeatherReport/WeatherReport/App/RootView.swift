@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RootView: View {
     private let dependencies: AppDependencies
-    @State private var router = AppRouter()
+    @Environment(AppRouter.self) private var router
     @State private var airportsListViewModel: AirportsListViewModel
 
     init(dependencies: AppDependencies) {

@@ -27,6 +27,7 @@ struct WeatherRepositoryTests {
     }
     
     private actor CacheSpy: WeatherCacheStoring {
+        
         private var storage: [String: CachedWeatherEntry] = [:]
         private(set) var saveCalls: [String] = []
         private(set) var deleteCalls: [String] = []
@@ -54,6 +55,10 @@ struct WeatherRepositoryTests {
             if let error = deleteError { throw error }
             storage[airport] = nil
             deleteCalls.append(airport)
+        }
+        
+        func deleteAll() async throws {
+            storage.removeAll()
         }
     }
     

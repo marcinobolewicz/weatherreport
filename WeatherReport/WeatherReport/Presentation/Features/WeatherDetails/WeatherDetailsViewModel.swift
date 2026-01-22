@@ -6,6 +6,7 @@ final class WeatherDetailsViewModel {
     let airportIdentifier: String
     private let weatherRepository: WeatherRepository
     private let presenter: WeatherDetailsPresenting
+    private let appSettings: AppSettingsProviding
 
     var selectedTab: DetailTab = .conditions
     var state: LoadState = .idle
@@ -15,8 +16,7 @@ final class WeatherDetailsViewModel {
     var reportDate: String?
     var infoMessage: String?
     var maxAgeExceeded: Bool = false
-
-    private let appSettings: AppSettingsProviding
+    
     private let sleeper: any Sleeping
     
     private var loadTask: Task<Void, Never>?

@@ -26,6 +26,11 @@ struct AppNavigationDestinations: ViewModifier {
                 appSettings: dependencies.appSettings,
                 weatherRepository: dependencies.weatherRepository
             )
+        case .settings:
+            SettingsView(
+                appSettings: dependencies.appSettings,
+                weatherRepository: dependencies.weatherRepository
+            )
         }
     }
 }

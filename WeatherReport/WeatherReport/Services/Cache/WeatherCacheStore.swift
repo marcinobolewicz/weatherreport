@@ -16,4 +16,5 @@ protocol WeatherCacheStoring: Sendable {
     func loadEntry(for airport: String) async throws -> CachedWeatherEntry?
     func saveEntry(_ entry: CachedWeatherEntry, for airport: String) async throws
     func deleteEntry(for airport: String) async throws
+    func deleteAll() async throws 
 }
