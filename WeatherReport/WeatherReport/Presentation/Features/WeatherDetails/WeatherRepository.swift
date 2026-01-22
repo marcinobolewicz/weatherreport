@@ -5,13 +5,6 @@
 //  Created by Marcin Obolewicz on 20/01/2026.
 //
 
-//
-//  WeatherRepository.swift
-//  WeatherReport
-//
-//  Created by Marcin Obolewicz on 20/01/2026.
-//
-
 import Foundation
 
 enum ReportEvent: Sendable {

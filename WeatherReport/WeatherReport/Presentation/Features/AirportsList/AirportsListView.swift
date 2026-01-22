@@ -40,8 +40,6 @@ private extension AirportsListView {
     }
 }
 
-// MARK: - Row
-
 private extension AirportsListView {
     func airportRow(_ id: String) -> some View {
         Button {

@@ -20,6 +20,7 @@ final class AppSettings: AppSettingsProviding {
         static let defaultInterval: UInt64 = 30
         static let defaultCacheMaxAge: UInt64 = 600
     }
+    
     private enum Keys {
         static let enabled = "auto_refresh_enabled"
         static let interval = "auto_refresh_interval_seconds"

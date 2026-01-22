@@ -1,3 +1,10 @@
+//
+//  WeatherDetailsViewModel.swift
+//  WeatherReport
+//
+//  Created by Marcin Obolewicz on 16/01/2026.
+//
+
 import SwiftUI
 
 @Observable

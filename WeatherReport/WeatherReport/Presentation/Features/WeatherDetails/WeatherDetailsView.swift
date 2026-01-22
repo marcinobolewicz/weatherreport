@@ -120,6 +120,8 @@ enum DetailTab: CaseIterable {
     }
 }
 
+// MARK: - Preview
+
 #Preview {
     let settings = AppSettings()
     let mockService = MockWeatherService(mode: .success(.mockKPWM()))

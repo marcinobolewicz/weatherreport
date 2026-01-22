@@ -12,7 +12,6 @@ import Foundation
 @Suite("WeatherTextFormatter Tests")
 struct WeatherTextFormatterTests {
     
-    // Uses real WeatherDateFormatter and WeatherNumberFormatter
     private let formatter = WeatherTextFormatter()
     
     // MARK: - makeConditionsViewData
