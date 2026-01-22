@@ -49,7 +49,7 @@ struct WeatherTextFormatter: Sendable {
             
             periods.append(
                 ForecastPeriodViewData(
-                    id: periodID(periodModel.period),
+                    id: "\(index)",
                     title: "Period \(index + 1)",
                     timeRangeText: timeRangeText,
                     flightRulesText: periodModel.flightRules.uppercased(),
@@ -87,11 +87,6 @@ struct WeatherTextFormatter: Sendable {
         return layers
             .map { "\($0.coverage.uppercased()) \(Int($0.altitudeFt))" }
             .joined(separator: " • ")
-    }
-
-    private func periodID(_ period: PeriodModel?) -> String {
-        guard let period else { return UUID().uuidString }
-        return "\(period.start.timeIntervalSince1970)-\(period.end.timeIntervalSince1970)"
     }
 }
 

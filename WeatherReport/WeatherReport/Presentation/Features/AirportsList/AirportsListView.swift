@@ -13,8 +13,8 @@ struct AirportsListView: View {
 
     var body: some View {
         List {
-            airportsSection
             addAirportSection
+            airportsSection
         }
         .toolbar { settingsToolbarItem }
     }

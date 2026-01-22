@@ -23,14 +23,14 @@ struct ForecastView: View {
 
     @ViewBuilder
     private var periodsSection: some View {
-            if forecastViewData.periods.isEmpty {
-                Text("No forecast periods available")
-                    .foregroundStyle(.secondary)
-            } else {
-                ForEach(forecastViewData.periods, id: \.id) { period in
-                    ForecastPeriodRow(period: period)
-                }
+        if forecastViewData.periods.isEmpty {
+            Text("No forecast periods available")
+                .foregroundStyle(.secondary)
+        } else {
+            ForEach(forecastViewData.periods, id: \.id) { period in
+                ForecastPeriodRow(period: period)
             }
+        }
     }
 
     private var rawTAFSection: some View {
