@@ -51,7 +51,6 @@ struct WeatherDetailsViewModelTests {
         
         viewModel.onAppear()
         
-        // Wait for async task to complete
         try await Task.sleep(nanoseconds: 100_000_000)
         
         #expect(viewModel.state == .loaded)

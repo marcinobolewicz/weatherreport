@@ -72,3 +72,22 @@ private extension SettingsView {
         "Interval: \(Int(viewModel.autoRefreshIntervalSeconds)) s"
     }
 }
+
+// MARK: - Preview
+
+#Preview {
+    let settings = AppSettings()
+    let mockService = MockWeatherService(mode: .success(.mockKPWM()))
+    let cache = InMemoryWeatherCacheStore()
+
+    let repository = DefaultWeatherRepository(
+        live: mockService,
+        cache: cache,
+        coding: DefaultJSONCoding()
+    )
+
+    SettingsView(
+        appSettings: settings,
+        weatherRepository: repository
+    )
+}

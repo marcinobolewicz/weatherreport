@@ -13,8 +13,8 @@ struct AirportsListView: View {
 
     var body: some View {
         List {
-            airportsSection
             addAirportSection
+            airportsSection
         }
         .toolbar { settingsToolbarItem }
     }
@@ -39,8 +39,6 @@ private extension AirportsListView {
         }
     }
 }
-
-// MARK: - Row
 
 private extension AirportsListView {
     func airportRow(_ id: String) -> some View {

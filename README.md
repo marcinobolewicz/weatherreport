@@ -89,6 +89,18 @@ without introducing database or schema complexity.
   - Formatting logic (date/number/text)
 - Network and persistence are mocked via protocols to avoid flaky integration tests.
 
+## ⏱ Time Spent on Project
+
+| Area / Branch            | Estimated Time |
+|--------------------------|----------------|
+| 1. Networking            | ~4 hours       |
+| 2. Navigation            | ~3 hours       |
+| 3. Service Integration   | ~3.5 hours     |
+| 4. Data Cache            | ~4.5 hours     |
+| 5. Settings              | ~2 hours       |
+
+**Total estimated time:** ~17 hours
+
 ## Notes
 
 - No third-party libraries are required.
