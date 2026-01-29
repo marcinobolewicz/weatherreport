@@ -8,25 +8,6 @@
 import Foundation
 @testable import WeatherReport
 
-// MARK: - Mock HTTP Client
-
-final class MockHTTPClient: HTTPClient, @unchecked Sendable {
-    var lastRequestedURL: URL?
-    var lastRequestedHeaders: [String: String]?
-    var resultToReturn: Any?
-    var errorToThrow: Error?
-
-    func fetch<T: Decodable>(url: URL, headers: [String: String]) async throws -> T {
-        lastRequestedURL = url
-        lastRequestedHeaders = headers
-
-        if let error = errorToThrow { throw error }
-        if let result = resultToReturn as? T { return result }
-
-        throw NetworkError.noData
-    }
-}
-
 // MARK: - Mock URL Session
 
 final class MockURLSession: NetworkSessioning, @unchecked Sendable {
