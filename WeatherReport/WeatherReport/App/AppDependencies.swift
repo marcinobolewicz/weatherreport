@@ -7,6 +7,17 @@
 
 import Foundation
 
+enum AppConfigurationError: Error, CustomStringConvertible, Sendable {
+    case invalidBaseURL(String)
+
+    var description: String {
+        switch self {
+        case .invalidBaseURL(let value):
+            return "Invalid base URL string: \(value)"
+        }
+    }
+}
+
 /// Composition Root for dependency injection
 @MainActor
 final class AppDependencies {
@@ -15,16 +26,24 @@ final class AppDependencies {
     let weatherRepository: WeatherRepository
     let weatherService: WeatherService
     let coding: JSONCoding
-    
+
     init(
         httpClient: HTTPClient = DefaultHTTPClient(),
-        userDefaults: UserDefaults = .standard
-    ) {
+        userDefaults: UserDefaults = .standard,
+        baseURLString: String = ForeFlightConfig.baseURLString
+    ) throws {
+        self.coding = DefaultJSONCoding()
+
+        guard let baseURL = URL(string: baseURLString) else {
+            throw AppConfigurationError.invalidBaseURL(baseURLString)
+        }
+
         self.airportsStorage = AirportsStorage(defaults: userDefaults)
         self.appSettings = AppSettings(defaults: userDefaults)
-        self.weatherService = LiveWeatherService(httpClient: httpClient)
-        self.coding = DefaultJSONCoding()
-        
+
+        let apiClient = APIClient(baseURL: baseURL, httpClient: httpClient)
+        self.weatherService = LiveWeatherService(client: apiClient)
+
         let cacheStore = Self.makeCacheStore(coding: coding)
         self.weatherRepository = DefaultWeatherRepository(
             live: weatherService,

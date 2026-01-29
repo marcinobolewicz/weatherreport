@@ -149,7 +149,8 @@ final class WeatherDetailsViewModel {
     ) {
         loadTask?.cancel()
 
-        loadTask = Task {
+        loadTask = Task { [weak self] in
+            guard let self else { return }
             do {
                 let result = try await operation()
                 await apply(dto: result.dto, source: result.source)
